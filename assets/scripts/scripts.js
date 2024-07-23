@@ -197,29 +197,129 @@ VanillaTilt.init(document.querySelector("#work-2 .center"), {
 
 
 
-if ($(".service-card").length > 0) {
-  gsap.registerPlugin(ScrollTrigger);
-  gsap.matchMedia().add("(min-width: 1024px)", () => {
-    gsap.to(".service-card.right", {
-      x: 200,
-      scrollTrigger: {
-        trigger: ".service-card.right",
-        start: "bottom bottom",
-        scrub: true
-      }
-    });
+gsap.registerPlugin(ScrollTrigger);
 
-    gsap.to(".service-card.left", {
-      x: -200,
-      scrollTrigger: {
-        trigger: ".service-card.left",
-        start: "bottom bottom",
-        scrub: true
-      }
-    });
+gsap.matchMedia().add("(min-width: 1024px)", () => {
+  gsap.to(".service-card.right", {
+    x: 200,
+    scrollTrigger: {
+      trigger: ".service-card.right",
+      start: "bottom bottom",
+      scrub: true
+    }
   });
 
-}
+  gsap.to(".service-card.left", {
+    x: -200,
+    scrollTrigger: {
+      trigger: ".service-card.left",
+      start: "bottom bottom",
+      scrub: true
+    }
+  });
+
+  gsap.set(".faq-item", { opacity: 0, y: 50 });
+  gsap.to(".faq-item", {
+    opacity: 1,
+    y: 0,
+    duration: 0.7,
+    stagger: 0.1,
+    scrollTrigger: {
+      trigger: ".faq-item",
+      start: "bottom bottom",
+      end: "50% 50%",
+      scrub: true
+    }
+  });
+
+  gsap.set(".testimonial-item", { scale: .5, opacity: 0, y: 50 });
+  gsap.to(".testimonial-item", {
+    scale: 1,
+    opacity: 1,
+    y: 0,
+    duration: 0.7,
+    stagger: 0.25,
+    scrollTrigger: {
+      trigger: ".testimonial-item",
+      start: "bottom bottom",
+      end: "65% 65%",
+      scrub: true
+    }
+  });
+  gsap.set(".pricing-item", { scale: .5, opacity: 0, y: 50 });
+  gsap.to(".pricing-item", {
+    scale: 1,
+    opacity: 1,
+    y: 0,
+    duration: 0.7,
+    stagger: 0.25,
+    scrollTrigger: {
+      trigger: ".pricing-item",
+      start: "bottom bottom",
+      end: "70% 70%",
+      scrub: true
+    }
+  });
+  gsap.set(".choice-1", { scale: .5, opacity: 0, y: 50 });
+  gsap.to(".choice-1", {
+    scale: 1,
+    opacity: 1,
+    y: 0,
+    duration: 0.7,
+    scrollTrigger: {
+      trigger: ".choice-1",
+      start: "bottom bottom",
+      end: "50% 50%",
+      scrub: true
+    }
+  });
+
+  gsap.set(".choice-2", { scale: .5, opacity: 0, y: 50 });
+  gsap.to(".choice-2", {
+    scale: 1,
+    opacity: 1,
+    delay: .3,
+    y: 0,
+    duration: 0.7,
+    scrollTrigger: {
+      trigger: ".choice-2",
+      start: "bottom bottom",
+      end: "50% 50%",
+      scrub: true
+    }
+  });
+
+  gsap.set(".del-item:nth-child(even)  *", { opacity: 0, x: 100 });
+  gsap.to(".del-item:nth-child(even)  *", {
+    opacity: 1,
+    stagger: 0.25,
+    x: 0,
+    duration: 0.7,
+    scrollTrigger: {
+      trigger: ".del-item:nth-child(even)  *",
+      start: "bottom bottom",
+      end: "50% 50%",
+      scrub: true
+    }
+  });
+  gsap.set(".del-item:nth-child(odd)  *", { opacity: 0, x: -100 });
+  gsap.to(".del-item:nth-child(odd)  *", {
+    opacity: 1,
+    stagger: 0.5,
+    x: 0,
+    duration: 0.7,
+    scrollTrigger: {
+      trigger: ".del-item:nth-child(odd)  *",
+      start: "bottom bottom",
+      end: "50% 50%",
+      scrub: true
+    }
+  });
+
+});
+
+
 gsap.from(".deslog1", { duration: .7, opacity: 0, scale: .1, transformOrigin: "0% 50%", x: 200 })
 gsap.from(".deslog2", { duration: .5, opacity: 0, scale: .2, x: 40, delay: .5, y: 60 })
 gsap.from(".path1", { duration: .07, opacity: 0, stagger: .05, scale: 2, transformOrigin: "50% 50%", delay: 1.2 })
+
