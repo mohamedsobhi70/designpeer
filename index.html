@@ -1,0 +1,1383 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="desccription will be here" />
+    <title>DesignPeer - Home Page</title>
+    <link rel="stylesheet" href="assets/css/aos.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+</head>
+
+<body>
+
+    <!-- start DP header  -->
+    <header id="header">
+        <div class="container">
+            <div class="header-container flex items-center justify-between px-6 md:px-0 ">
+                <a href="index.html" class="logo">
+                    <img class="block dark:hidden" src="assets/images/logo.png" alt="logo" />
+                    <img class="hidden dark:block" src="assets/images/logodark.png" alt="logo" />
+                </a>
+
+                <div class="mobile-menu transition z-auto duration-300 lg:flex flex-col lg:flex-row lg:items-center justify-end 
+                    fixed w-screen lg:w-auto lg:h-auto h-screen top-0 left-0 hidden lg:translate-x-0 gap-12
+                     dark:bg-[#0F141F] bg-secondary lg:bg-transparent dark:lg:bg-transparent lg:static p-10 lg:p-0">
+                    <ul
+                        class="list-none flex flex-col lg:flex-row gap-10 border-b lg:border-none border-gray-300 dark:border-[#475569] pb-12 lg:pb-0">
+                        <li class="nav-link active">
+                            <a class="hero" href="#hero">Home</a>
+                        </li>
+                        <li class="nav-link">
+                            <a class="services" href="#services">Services</a>
+                        </li>
+                        <li class="nav-link">
+                            <a class="work" href="#work">Work</a>
+                        </li>
+                        <li class="nav-link">
+                            <a class="pricing" href="#pricing">Pricing</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">
+                                Coaching
+                                <span
+                                    class="p-1.5 ltr:ml-2 rtl:mr-2 bg-white t-[#6B7280] rounded-lg text-[11px] dark:bg-[#374151]">SOON</span>
+                            </a>
+                        </li>
+                        <button class="menu-close-btn absolute top-[30px] right-[30px] lg:hidden">
+                            <svg width="29" height="29" viewBox="0 0 29 29" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M24.4546 27C23.7301 27 23.0136 26.7362 22.4411 26.164L2.11485 5.84701C1.01705 4.74971 1.01705 2.92046 2.11485 1.82316C3.2129 0.725612 5.04377 0.725612 6.14182 1.82316L26.4681 22.1402C27.5619 23.2335 27.5658 25.0534 26.48 26.152C25.877 26.7091 25.1448 27 24.4546 27Z"
+                                    fill="#475569" stroke="#0F141F" stroke-width="2" />
+                                <path
+                                    d="M3.83684 27.2915C3.11235 27.2915 2.39583 27.0277 1.82335 26.4555C0.72555 25.3582 0.725551 23.529 1.82335 22.4317L22.1496 2.11467C23.2476 1.01712 25.0785 1.01712 26.1766 2.11467C27.2744 3.21197 27.2744 5.04122 26.1766 6.13852L5.85033 26.4555C5.27784 27.0277 4.56132 27.2915 3.83684 27.2915Z"
+                                    fill="#475569" stroke="#0F141F" stroke-width="2" />
+                            </svg>
+                            <span class="sr-only">Close Menu</span>
+                        </button>
+                    </ul>
+                    <div class="flex items-center justify-between gap-12 ">
+                        <div id="dark-mode-btn" class="flex items-center">
+                            <svg class="block dark:hidden cursor-pointer" width="22" height="22" viewBox="0 0 22 22"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.4599 21.7501C11.2899 21.7501 11.1199 21.7501 10.9499 21.7401C5.34995 21.4901 0.669948 16.9801 0.279948 11.4801C-0.0600518 6.76011 2.66995 2.35011 7.06995 0.500114C8.31995 -0.0198855 8.97995 0.380114 9.25995 0.670114C9.53995 0.950114 9.92995 1.60011 9.40995 2.79011C8.94995 3.85011 8.71995 4.98011 8.72995 6.14011C8.74995 10.5701 12.4299 14.3301 16.9199 14.5101C17.5699 14.5401 18.2099 14.4901 18.8299 14.3801C20.1499 14.1401 20.6999 14.6701 20.9099 15.0101C21.1199 15.3501 21.3599 16.0801 20.5599 17.1601C18.4399 20.0601 15.0699 21.7501 11.4599 21.7501ZM1.76995 11.3701C2.10995 16.1301 6.16995 20.0301 11.0099 20.2401C14.2999 20.4001 17.4199 18.9001 19.3399 16.2801C19.4899 16.0701 19.5599 15.9201 19.5899 15.8401C19.4999 15.8301 19.3399 15.8201 19.0899 15.8701C18.3599 16.0001 17.5999 16.0501 16.8499 16.0201C11.5699 15.8101 7.24995 11.3801 7.21995 6.16011C7.21995 4.78011 7.48995 3.45011 8.03995 2.20011C8.13995 1.98011 8.15995 1.83011 8.16995 1.75011C8.07995 1.75011 7.91995 1.77011 7.65995 1.88011C3.84995 3.48011 1.48995 7.30011 1.76995 11.3701Z"
+                                    fill="#6B7280" />
+                            </svg>
+
+                            <svg class="hidden dark:block cursor-pointer" width="22" height="22" viewBox="0 0 22 22"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11 18.25C7 18.25 3.75 15 3.75 11C3.75 7 7 3.75 11 3.75C15 3.75 18.25 7 18.25 11C18.25 15 15 18.25 11 18.25ZM11 5.25C7.83 5.25 5.25 7.83 5.25 11C5.25 14.17 7.83 16.75 11 16.75C14.17 16.75 16.75 14.17 16.75 11C16.75 7.83 14.17 5.25 11 5.25Z"
+                                    fill="#9CA3AF" />
+                                <path
+                                    d="M11 21.96C10.45 21.96 10 21.55 10 21V20.92C10 20.37 10.45 19.92 11 19.92C11.55 19.92 12 20.37 12 20.92C12 21.47 11.55 21.96 11 21.96ZM18.14 19.14C17.88 19.14 17.63 19.04 17.43 18.85L17.3 18.72C16.91 18.33 16.91 17.7 17.3 17.31C17.69 16.92 18.32 16.92 18.71 17.31L18.84 17.44C19.23 17.83 19.23 18.46 18.84 18.85C18.65 19.04 18.4 19.14 18.14 19.14ZM3.86 19.14C3.6 19.14 3.35 19.04 3.15 18.85C2.76 18.46 2.76 17.83 3.15 17.44L3.28 17.31C3.67 16.92 4.3 16.92 4.69 17.31C5.08 17.7 5.08 18.33 4.69 18.72L4.56 18.85C4.37 19.04 4.11 19.14 3.86 19.14ZM21 12H20.92C20.37 12 19.92 11.55 19.92 11C19.92 10.45 20.37 10 20.92 10C21.47 10 21.96 10.45 21.96 11C21.96 11.55 21.55 12 21 12ZM1.08 12H1C0.45 12 0 11.55 0 11C0 10.45 0.45 10 1 10C1.55 10 2.04 10.45 2.04 11C2.04 11.55 1.63 12 1.08 12ZM18.01 4.99C17.75 4.99 17.5 4.89 17.3 4.7C16.91 4.31 16.91 3.68 17.3 3.29L17.43 3.16C17.82 2.77 18.45 2.77 18.84 3.16C19.23 3.55 19.23 4.18 18.84 4.57L18.71 4.7C18.52 4.89 18.27 4.99 18.01 4.99ZM3.99 4.99C3.73 4.99 3.48 4.89 3.28 4.7L3.15 4.56C2.76 4.17 2.76 3.54 3.15 3.15C3.54 2.76 4.17 2.76 4.56 3.15L4.69 3.28C5.08 3.67 5.08 4.3 4.69 4.69C4.5 4.89 4.24 4.99 3.99 4.99ZM11 2.04C10.45 2.04 10 1.63 10 1.08V1C10 0.45 10.45 0 11 0C11.55 0 12 0.45 12 1C12 1.55 11.55 2.04 11 2.04Z"
+                                    fill="#9CA3AF" />
+                            </svg>
+                        </div>
+                        <a href="index-ar.html" class="dark:text-[#9CA3AF] font-IBM text-sm">العربية</a>
+                    </div>
+                </div>
+
+                <button
+                    class="mobile-menu-btn flex flex-col gap-1 lg:hidden w-8 h-8 bg-[#a8845566] dark:bg-[#cbd5e166] items-center justify-center rounded-lg">
+                    <span class="bg-[#A88455] dark:bg-[#CBD5E1] rounded-full h-0.5 w-5"></span>
+                    <span class="bg-[#A88455] dark:bg-[#CBD5E1] rounded-full h-0.5 w-5"></span>
+                    <span class="bg-[#A88455] dark:bg-[#CBD5E1] rounded-full h-0.5 w-5"></span>
+
+                    <span class="sr-only">Mobile Menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- end DP header  -->
+
+
+
+    <!-- start DP main page content  -->
+    <main>
+        <!-- 
+        <div class="fixed flex justify-center z-50 items-center bg-black w-screen h-screen">
+            <svg width="700"  viewBox="0 0 142 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_26_6361)">
+                    <path class="deslog1"
+                        d="M9.16249 5.01221V18.0146C9.16111 18.2749 9.05645 18.524 8.87151 18.7072L3.87248 23.7106C3.73535 23.8474 3.56078 23.9405 3.37078 23.9782C3.18079 24.0159 2.98389 23.9964 2.80492 23.9224C2.62595 23.8483 2.47293 23.7229 2.36516 23.5619C2.25738 23.401 2.19969 23.2117 2.19935 23.018V7.89582C2.19803 7.6351 2.09339 7.38553 1.90837 7.20183L0.540765 5.82986C0.368152 5.65828 0.231167 5.45426 0.137692 5.22954C0.0442158 5.00482 -0.00390625 4.76384 -0.00390625 4.52045C-0.00390625 4.27707 0.0442158 4.03609 0.137692 3.81137C0.231167 3.58665 0.368152 3.38263 0.540765 3.21105L2.8526 0.906488C3.02418 0.733875 3.2282 0.59689 3.45292 0.503414C3.67764 0.409939 3.91862 0.361816 4.16201 0.361816C4.40539 0.361816 4.64637 0.409939 4.87109 0.503414C5.09581 0.59689 5.29983 0.733875 5.47142 0.906488L8.87588 4.3255C9.05753 4.50812 9.16042 4.75464 9.16249 5.01221Z"
+                        fill="#8859FA" />
+                    <path class="deslog2"
+                        d="M21.7248 5.97089V17.0688L16.0391 22.7546C15.8757 22.9159 15.6554 23.0063 15.4259 23.0063C15.1963 23.0063 14.976 22.9159 14.8126 22.7546L11.1143 19.0562C10.953 18.8929 10.8626 18.6726 10.8626 18.443C10.8626 18.2134 10.953 17.9931 11.1143 17.8298L14.7515 14.1925V8.85449L11.0837 5.17942C10.9225 5.01605 10.832 4.79574 10.832 4.56618C10.832 4.33663 10.9225 4.11631 11.0837 3.95294L14.7821 0.251682C14.9454 0.0904207 15.1658 0 15.3953 0C15.6249 0 15.8452 0.0904207 16.0085 0.251682L21.7248 5.97089Z"
+                        fill="#4AB473" />
+                    <path class="path1"
+                        d="M78.3874 8.1182C78.7832 6.576 80.078 5.73362 81.8122 5.92276V8.1342C81.2186 8.19094 80.6483 8.25787 80.2657 8.79763C80.9189 9.21518 81.3874 9.86698 81.5751 10.6192C82.045 12.5484 81.0121 14.1575 78.981 14.639C77.6225 14.957 76.2085 14.9525 74.852 14.626C74.5858 14.5649 74.497 14.6521 74.4155 14.8631C74.2133 15.3854 74.3923 15.8699 74.9306 16.027C75.3448 16.1341 75.77 16.1932 76.1978 16.2031C77.2962 16.2671 78.4005 16.2671 79.4961 16.3689C80.2499 16.4386 80.9626 16.744 81.5329 17.2419C83.0184 18.5251 82.7885 21.1454 81.0964 22.3049C80.305 22.8476 79.4088 23.1007 78.4689 23.2171C76.9893 23.4019 75.5184 23.3801 74.0853 22.916C72.8995 22.5319 71.9422 21.8583 71.58 20.5881C71.241 19.4009 71.449 18.3185 72.3234 17.4034C72.3525 17.3728 72.3772 17.3379 72.402 17.3073C71.1973 15.9092 71.7313 14.3466 72.8792 13.5421C72.8195 13.446 72.7613 13.3456 72.6988 13.2511C71.8258 11.8849 72.0819 9.98774 73.2807 9.02314C73.8973 8.55217 74.6297 8.25659 75.4005 8.16766C75.8911 8.09494 76.3858 8.05411 76.8816 8.04545C77.3748 8.03527 77.868 8.0891 78.3874 8.1182ZM76.9325 21.3272L76.9471 21.2763C77.2861 21.2457 77.6294 21.2385 77.9655 21.1832C78.5911 21.0784 79.2022 20.914 79.6139 20.3772C80.1842 19.6352 79.8932 18.7331 78.9854 18.5484C78.4034 18.432 77.8055 18.4422 77.2148 18.4029C76.3142 18.349 75.4151 18.301 74.5145 18.2647C74.4662 18.2687 74.4194 18.284 74.378 18.3093C74.3366 18.3345 74.3016 18.3691 74.2759 18.4101C73.854 19.334 73.819 20.5576 75.2259 20.997C75.7701 21.1701 76.3564 21.221 76.9238 21.3272H76.9325ZM76.835 12.8888C77.2337 12.8423 77.5072 12.819 77.7793 12.7753C77.9199 12.7496 78.0571 12.7076 78.1881 12.6502C78.4333 12.5591 78.6427 12.3916 78.7852 12.1722C78.9278 11.9529 78.9959 11.6935 78.9796 11.4325C78.9592 10.8738 78.7104 10.4548 78.1663 10.2685C77.37 9.98328 76.4988 9.98637 75.7046 10.2773C75.4591 10.3538 75.2458 10.5096 75.0982 10.7201C74.9505 10.9307 74.8767 11.1843 74.8884 11.4412C74.8884 12.0071 75.1517 12.4596 75.6973 12.6415C76.0689 12.7489 76.447 12.8325 76.8292 12.8917L76.835 12.8888Z"
+                        fill="#fff" />
+                    <path class="path1"
+                        d="M29.8906 4.78516C32.1632 4.84772 34.4197 4.79389 36.653 5.00194C39.7083 5.29292 42.0361 7.76624 42.3795 10.8215C42.541 12.2764 42.4566 13.6891 41.9037 15.048C41.0148 17.2304 39.3533 18.5078 37.0764 18.9937C36.4612 19.1218 35.8351 19.19 35.2068 19.1974C33.4435 19.2236 31.6787 19.2061 29.8906 19.2061V4.78516ZM32.8004 16.6309C33.9643 16.5829 35.121 16.6309 36.2456 16.4651C37.7951 16.2396 38.7742 15.259 39.1991 13.7502C39.436 12.9206 39.4901 12.0495 39.3576 11.1969C39.2821 10.6744 39.1454 10.1627 38.9503 9.67216C38.5269 8.64355 37.7369 7.98884 36.6675 7.68186C35.393 7.31668 34.0924 7.53637 32.7873 7.46362L32.8004 16.6309Z"
+                        fill="#fff" />
+                    <path class="path1"
+                        d="M99.9636 15.342V19.1887H97.0742V4.84635H103.131C103.993 4.83025 104.85 4.98605 105.651 5.30464C106.912 5.8284 107.791 6.72316 108.238 8.01511C108.679 9.26456 108.711 10.6221 108.329 11.891C107.747 13.8551 106.345 14.9026 104.379 15.2372C103.767 15.3182 103.15 15.3546 102.533 15.3463C101.696 15.3551 100.858 15.342 99.9636 15.342ZM99.9811 12.6446C101.098 12.6446 102.19 12.6926 103.275 12.6315C104.471 12.5631 105.216 11.9462 105.433 10.9293C105.513 10.5415 105.54 10.1444 105.511 9.74935C105.415 8.43994 104.695 7.68631 103.39 7.55537C102.747 7.4899 102.092 7.51172 101.443 7.50299C100.962 7.49571 100.48 7.50299 99.9884 7.50299L99.9811 12.6446Z"
+                        fill="#fff" />
+                    <path class="path1"
+                        d="M46.6013 14.8342C46.7366 15.745 47.1614 16.375 47.9238 16.7634C48.74 17.1795 49.6187 17.1999 50.5077 17.13C51.417 17.0443 52.3017 16.7866 53.1148 16.3706C53.4058 17.0558 53.6808 17.7266 53.9674 18.4074C53.2278 18.8641 52.4058 19.171 51.5479 19.3109C50.1308 19.5452 48.7152 19.5888 47.3214 19.1655C45.1798 18.5137 44.0843 16.9831 43.7817 14.8371C43.5853 13.6108 43.7106 12.3545 44.1454 11.1912C44.8554 9.35944 46.239 8.3832 48.1449 8.10532C49.287 7.938 50.4145 8.00929 51.4912 8.47049C53.0348 9.12665 53.8641 10.3735 54.2278 11.9652C54.4467 12.9057 54.4852 13.8793 54.3413 14.8342H46.6013ZM51.6541 12.9429C51.6454 12.0408 51.4766 11.2057 50.6662 10.7169C49.7089 10.1349 48.6789 10.1524 47.7099 10.6965C46.8646 11.1737 46.6376 12.0059 46.6173 12.9429H51.6541Z"
+                        fill="#fff" />
+                    <path class="path1"
+                        d="M120.464 14.8474H112.736C112.789 15.4543 113.075 16.017 113.534 16.4172C114.148 16.9497 114.895 17.1199 115.68 17.1534C116.82 17.2051 117.955 16.9778 118.987 16.4914C119.057 16.4594 119.133 16.4318 119.245 16.3809C119.526 17.0501 119.804 17.7135 120.096 18.4075C119.538 18.76 118.925 19.0162 118.282 19.1655C116.67 19.5467 115.052 19.6296 113.446 19.1524C111.554 18.5938 110.437 17.3105 110.016 15.4075C109.679 14.0038 109.77 12.5313 110.277 11.1796C110.98 9.34497 112.37 8.3731 114.276 8.09667C115.419 7.92935 116.546 8.0021 117.623 8.4633C119.158 9.12237 119.985 10.3547 120.351 11.9347C120.577 12.8891 120.615 13.8783 120.464 14.8474ZM117.786 12.9386C117.767 12.0249 117.598 11.1767 116.767 10.6937C116.321 10.421 115.808 10.2784 115.285 10.282C114.763 10.2856 114.252 10.4353 113.809 10.714C112.989 11.1971 112.766 12.0234 112.75 12.9386H117.786Z"
+                        fill="#fff" />
+                    <path class="path1"
+                        d="M132.51 14.8503H124.789C124.815 15.1676 124.906 15.4762 125.056 15.757C125.206 16.0377 125.412 16.2847 125.662 16.4827C126.265 16.9642 126.983 17.1228 127.732 17.1548C128.874 17.2057 130.011 16.9775 131.045 16.4899C131.113 16.4579 131.19 16.4303 131.298 16.3823C131.58 17.053 131.859 17.7164 132.149 18.4075C131.588 18.7616 130.971 19.0179 130.324 19.1655C128.714 19.5452 127.095 19.6281 125.488 19.1509C123.597 18.5893 122.481 17.3047 122.062 15.4017C121.726 13.9977 121.817 12.5255 122.324 11.1737C123.03 9.34056 124.42 8.37014 126.326 8.09371C127.468 7.92931 128.596 8.00205 129.673 8.46325C131.206 9.12378 132.032 10.3546 132.398 11.9376C132.623 12.8921 132.661 13.8812 132.51 14.8503ZM129.831 12.9429C129.811 11.9681 129.614 11.0908 128.708 10.6354C127.71 10.1335 126.671 10.1524 125.728 10.7984C124.994 11.3003 124.806 12.083 124.793 12.9429H129.831Z"
+                        fill="#fff" />
+                    <path class="path1"
+                        d="M86.7763 9.97352C87.2506 9.27226 87.7947 8.70776 88.5469 8.37314C89.9858 7.74462 92.3427 7.87556 93.4557 9.41775C94.0163 10.207 94.3168 11.1514 94.3156 12.1195C94.352 14.4561 94.3272 16.7955 94.3272 19.1598H91.5033V12.9342C91.5033 12.7364 91.5033 12.5371 91.4887 12.3392C91.4145 11.3731 90.8689 10.749 89.9742 10.5933C88.1875 10.2892 87.028 11.2189 87.0004 13.0303C86.9713 14.9391 86.9902 16.8479 86.9887 18.7553V19.1656H84.1953V8.25383C84.9373 8.25383 85.672 8.25383 86.4082 8.26693C86.4693 8.26693 86.5537 8.45315 86.5799 8.55791C86.657 9.03657 86.7123 9.5065 86.7763 9.97352Z"
+                        fill="#fff" />
+                    <path class="path1"
+                        d="M55.7344 18.2503L56.8546 16.1378C56.987 16.2135 57.102 16.2833 57.2256 16.3488C58.3283 16.8998 59.5761 17.0907 60.7931 16.8944C61.3459 16.8114 61.6558 16.5568 61.7038 16.2076C61.7518 15.8585 61.5263 15.5413 60.9764 15.3347C60.214 15.0437 59.4255 14.8357 58.6587 14.5622C58.2856 14.4284 57.9253 14.2613 57.5821 14.0631C56.3658 13.3662 55.941 12.2692 56.0908 10.9264C56.2363 9.65478 56.9361 8.79057 58.1277 8.35556C59.5026 7.85507 60.908 7.94382 62.3018 8.25953C62.907 8.40502 63.4861 8.64945 64.1146 8.86041C63.796 9.62423 63.505 10.3153 63.2227 11.0006C62.5782 10.8551 61.9642 10.6718 61.3314 10.583C60.8071 10.5281 60.2793 10.514 59.7528 10.5408C59.5876 10.5531 59.4274 10.6028 59.2843 10.6863C58.8188 10.9322 58.762 11.4923 59.1927 11.7935C59.4515 11.9597 59.7307 12.0917 60.0234 12.1863C60.8294 12.4773 61.6573 12.7188 62.4487 13.0447C63.2402 13.3706 63.924 13.8885 64.2848 14.7193C65.0719 16.5321 64.2106 18.4598 62.3032 19.1218C60.9531 19.5903 59.5709 19.5466 58.1873 19.2978C57.2984 19.1473 56.4578 18.7883 55.7344 18.2503Z"
+                        fill="#fff" />
+                    <path class="path1"
+                        d="M137.367 19.1655H134.57V8.28287H136.898C136.98 8.84446 137.058 9.39587 137.151 10.0448C137.258 9.86871 137.319 9.76396 137.384 9.6592C138.178 8.37162 139.539 7.78093 140.978 8.08646C141.241 8.14174 141.366 8.23195 141.356 8.53457C141.328 9.32312 141.347 10.1146 141.347 10.8944C140.938 10.8333 140.562 10.7489 140.183 10.7227C138.689 10.6005 137.671 11.4065 137.45 12.8833C137.4 13.2322 137.376 13.5842 137.377 13.9366C137.37 15.5574 137.377 17.1781 137.377 18.7989L137.367 19.1655Z"
+                        fill="#fff" />
+                    <path class="path1" d="M66.5781 19.1786V8.30908H69.3555V19.1786H66.5781Z" fill="#fff" />
+                    <path class="path1" d="M69.357 4.58154V7.07669H66.5781V4.58154H69.357Z" fill="#fff" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_26_6361">
+                        <rect width="141.351" height="24" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+
+        </div> -->
+        <!-- start section  -->
+
+        <section id="hero" class="pt-16 lg:pt-32 px-8 lg:px-0">
+            <div class="container flex flex-col gap-10 lg:gap-10 py-10 lg:py-12">
+                <div class="flex flex-col gap-3 items-start lg:items-center">
+                    <a href="#"
+                        class="rounded-full flex items-center gap-3 bg-[#F9EDDD] dark:bg-[#282F40] text-[13px] text-[#374151] dark:text-[#D1D5DB] font-medium p-1 ltr:pr-2.5 rtl:pl-2.5">
+                        <span
+                            class="rounded-full bg-white dark:bg-[#131A2A] pt-0.5 px-2.5 text-[#111827] dark:text-white text-xs leading-5">
+                            We’re hiring!
+                        </span>
+                        <span class="flex items-center gap-1">
+                            Join our remote team
+                            <img src="assets/images/icons/hiringarrow.svg" class="rtl:rotate-180" width="16" height="16"
+                                alt="arrow">
+                        </span>
+                    </a>
+
+                    <h1
+                        class="lg:text-center flex flex-col gap-1 lg:items-center text-[#111827] dark:text-white font-bold -tracking-[3px] lg:tracking-normal">
+                        <span class="text-[#36C86F] text-[40px] lg:text-5xl">
+                            Cut the Guessing. Design for Results
+                        </span>
+                        <span class="text-3xl lg:text-5xl">
+                            Grow Faster. Hire Less.
+                        </span>
+                    </h1>
+
+                    <ul class="flex flex-col lg:flex-row lg:justify-center gap-2 lg:gap-10 pt-3">
+                        <li class="flex items-center gap-2.5 lg:gap-3 text-[#374151] dark:text-[#9CA3AF]">
+                            <img src="assets/images/icons/check-circle.svg" width="20" height="20" alt="check-circle">
+                            No hiring headaches
+                        </li>
+                        <li class="flex items-center gap-2.5 lg:gap-3 text-[#374151] dark:text-[#9CA3AF]">
+                            <img src="assets/images/icons/check-circle.svg" width="20" height="20" alt="check-circle">
+                            One-flat monthly fee
+                        </li>
+                        <li class="flex items-center gap-2.5 lg:gap-3 text-[#374151] dark:text-[#9CA3AF]">
+                            <img src="assets/images/icons/check-circle.svg" width="20" height="20" alt="check-circle">
+                            100% Satisfaction-Guarantee
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col gap-4 items-start lg:items-center">
+                    <a href="#" class="primary-btn text-xl py-6 px-12">
+                        Get started
+                    </a>
+                    <span class="text-center text-[#6B7280] text-xs">
+                        Zero hassle, limitless design
+                    </span>
+                </div>
+
+                <div class="flex flex-col gap-6">
+
+                    <div class="flex items-center justify-center divide-x divide-[#D1D5DB]">
+                        <div class="flex items-center px-5">
+                            <img src="assets/images/icons/star.svg" width="20" height="20" alt="star">
+                            <img src="assets/images/icons/star.svg" width="20" height="20" alt="star">
+                            <img src="assets/images/icons/star.svg" width="20" height="20" alt="star">
+                            <img src="assets/images/icons/star.svg" width="20" height="20" alt="star">
+                            <img src="assets/images/icons/star.svg" width="20" height="20" alt="star">
+                        </div>
+                        <span class="px-5 text-sm font-medium text-[#6B7280] ">
+                            Rated 5 stars by over 50+ clients
+                        </span>
+                    </div>
+                    <!-- clients Caroue  -->
+                    <div class="owl-carousel owl-theme clients-carousel">
+                        <div class="item flex items-center justify-center">
+                            <img src="assets/images/clients-1.png" class="!w-auto" width="109" height="48"
+                                alt="clients" />
+                        </div>
+                        <div class="item flex items-center justify-center">
+                            <img src="assets/images/clients-2.png" class="!w-auto" width="123" height="48"
+                                alt="clients" />
+                        </div>
+                        <div class="item flex items-center justify-center">
+                            <img src="assets/images/clients-3.png" class="!w-auto" width="90" height="47"
+                                alt="clients" />
+                        </div>
+                        <div class="item flex items-center justify-center">
+                            <img src="assets/images/clients-4.png" class="!w-auto" width="124" height="48"
+                                alt="clients" />
+                        </div>
+                        <div class="item flex items-center justify-center">
+                            <img src="assets/images/clients-5.png" class="!w-auto" width="56" height="48"
+                                alt="clients" />
+                        </div>
+                        <div class="item flex items-center justify-center">
+                            <img src="assets/images/clients-6.png" class="!w-auto" width="138" height="48"
+                                alt="clients" />
+                        </div>
+                        <div class="item flex items-center justify-center">
+                            <img src="assets/images/clients-7.png" class="!w-auto" width="70" height="48"
+                                alt="clients" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- our Work Section  -->
+        <section class="py-6 scroll-mt-24" id="work">
+            <div class="flex flex-col">
+                <h2 class="section-title z-10  px-8 lg:px-0">
+                    Our results speak louder
+                </h2>
+
+                <!-- work Caroue  -->
+                <div class="relative">
+
+                    <div class="owl-carousel owl-theme work-carousel work-carousel1" id="work-1">
+                        <div class="item flex items-center justify-center rounded-3xl overflow-hidden">
+                            <img src="assets/images/image-2.jpg" class="object-cover" width="109" height="48"
+                                alt="clients" />
+                        </div>
+                        <div class="item flex items-center justify-center rounded-3xl overflow-hidden">
+                            <img src="assets/images/image-3.jpg" class="object-cover" width="109" height="48"
+                                alt="clients" />
+                        </div>
+                        <div class="item flex items-center justify-center rounded-3xl overflow-hidden">
+                            <img src="assets/images/image-4.jpg" class="object-cover" width="109" height="48"
+                                alt="clients" />
+                        </div>
+                        <div class="item flex items-center justify-center rounded-3xl overflow-hidden">
+                            <img src="assets/images/image-1.jpg" class="object-cover" width="109" height="48"
+                                alt="clients" />
+                        </div>
+                        <div class="item flex items-center justify-center rounded-3xl overflow-hidden">
+                            <img src="assets/images/image-5.jpg" class="object-cover" width="109" height="48"
+                                alt="clients" />
+                        </div>
+                        <div class="item flex items-center justify-center rounded-3xl overflow-hidden">
+                            <img src="assets/images/image-2.jpg" class="object-cover" width="109" height="48"
+                                alt="clients" />
+                        </div>
+                        <div class="item flex items-center justify-center rounded-3xl overflow-hidden">
+                            <img src="assets/images/image-3.jpg" class="object-cover" width="109" height="48"
+                                alt="clients" />
+                        </div>
+                        <div class="item flex items-center justify-center rounded-3xl overflow-hidden">
+                            <img src="assets/images/image-4.jpg" class="object-cover" width="109" height="48"
+                                alt="clients" />
+                        </div>
+                        <div class="item flex items-center justify-center rounded-3xl overflow-hidden">
+                            <img src="assets/images/image-1.jpg" class="object-cover" width="109" height="48"
+                                alt="clients" />
+                        </div>
+                        <div class="item flex items-center justify-center rounded-3xl overflow-hidden">
+                            <img src="assets/images/image-5.jpg" class="object-cover" width="109" height="48"
+                                alt="clients" />
+                        </div>
+                    </div>
+
+                    <img src="assets/images/work-shape1.svg" width="1600" height="75" alt="shape"
+                        class="absolute top-0 left-0 right-0 w-full z-[1] rotate-180 dark:hidden">
+                    <img src="assets/images/work-shape1.svg" width="1600" height="75" alt="shape"
+                        class="absolute bottom-0 left-0 right-0 w-full z-[1] dark:hidden">
+
+                    <img src="assets/images/work-shape.svg" width="1600" height="75" alt="shape"
+                        class="absolute top-0 left-0 right-0 w-full z-[1] rotate-180 hidden dark:block">
+                    <img src="assets/images/work-shape.svg" width="1600" height="75" alt="shape"
+                        class="absolute bottom-0 left-0 right-0 w-full z-[1] hidden dark:block">
+
+                    <div class="owl-carousel owl-theme work-carousel work-carousel2 absolute top-0" id="work-2">
+                        <div class="item flex items-center justify-center rounded-3xl overflow-hidden" data-tilt>
+                            <img src="assets/images/image-2.jpg" class="object-cover" width="109" height="48"
+                                alt="clients" />
+                        </div>
+                        <div class="item flex items-center justify-center rounded-3xl overflow-hidden" data-tilt>
+                            <img src="assets/images/image-3.jpg" class="object-cover" width="109" height="48"
+                                alt="clients" />
+                        </div>
+                        <div class="item flex items-center justify-center rounded-3xl overflow-hidden" data-tilt>
+                            <img src="assets/images/image-4.jpg" class="object-cover" width="109" height="48"
+                                alt="clients" />
+                        </div>
+                        <div class="item flex items-center justify-center rounded-3xl overflow-hidden" data-tilt>
+                            <img src="assets/images/image-1.jpg" class="object-cover" width="109" height="48"
+                                alt="clients" />
+                        </div>
+                        <div class="item flex items-center justify-center rounded-3xl overflow-hidden" data-tilt>
+                            <img src="assets/images/image-5.jpg" class="object-cover" width="109" height="48"
+                                alt="clients" />
+                        </div>
+                        <div class="item flex items-center justify-center rounded-3xl overflow-hidden" data-tilt>
+                            <img src="assets/images/image-2.jpg" class="object-cover" width="109" height="48"
+                                alt="clients" />
+                        </div>
+                        <div class="item flex items-center justify-center rounded-3xl overflow-hidden" data-tilt>
+                            <img src="assets/images/image-3.jpg" class="object-cover" width="109" height="48"
+                                alt="clients" />
+                        </div>
+                        <div class="item flex items-center justify-center rounded-3xl overflow-hidden" data-tilt>
+                            <img src="assets/images/image-4.jpg" class="object-cover" width="109" height="48"
+                                alt="clients" />
+                        </div>
+                        <div class="item flex items-center justify-center rounded-3xl overflow-hidden" data-tilt>
+                            <img src="assets/images/image-1.jpg" class="object-cover" width="109" height="48"
+                                alt="clients" />
+                        </div>
+                        <div class="item flex items-center justify-center rounded-3xl overflow-hidden" data-tilt>
+                            <img src="assets/images/image-5.jpg" class="object-cover" width="109" height="48"
+                                alt="clients" />
+                        </div>
+                    </div>
+
+                    <div id="customDots" class="custom-dots"></div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Work Section  -->
+
+
+        <!-- You have 2 choices Section  -->
+        <section class="py-16 lg:py-32 overflow-hidden px-8 lg:px-0">
+            <div class="container flex flex-col gap-10 lg:gap-12">
+                <header class="flex flex-col gap-4">
+                    <h2 class="section-title">
+                        You have 2 choices
+                    </h2>
+                    <p class="section-excerpt">
+                        Either waste time and money, or deploy proven expertise now.
+                    </p>
+                </header>
+
+                <div
+                    class="lg:mx-auto lg:w-10/12 xl:w-9/12 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-center">
+                    <div class="choice-1">
+                        <h3 class="text-[#111827] dark:text-[#F9FAFB] text-[21px] font-semibold">
+                            Hiring the right designers can be a nightmare
+                        </h3>
+                        <ul class="flex flex-col gap-3">
+                            <li class="flex items-center gap-3 text-[#374151] dark:text-[#E5E7EB]">
+                                <span class="choise-icn"></span>
+                                <span class="flex-1">
+                                    Interview hundreds of designers
+                                </span>
+                            </li>
+                            <li class="flex items-center gap-3 text-[#374151] dark:text-[#E5E7EB]">
+                                <span class="choise-icn"></span>
+                                <span class="flex-1">
+                                    Filter them based on their roles
+                                </span>
+                            </li>
+                            <li class="flex items-center gap-3 text-[#374151] dark:text-[#E5E7EB]">
+                                <span class="choise-icn"></span>
+                                <span class="flex-1">
+                                    Hire a product manager to lead them
+                                </span>
+                            </li>
+                            <li class="flex items-center gap-3 text-[#374151] dark:text-[#E5E7EB]">
+                                <span class="choise-icn"></span>
+                                <span class="flex-1">
+                                    Create prototype after more months of assumptions
+                                </span>
+                            </li>
+                            <li class="flex items-center gap-3 text-[#374151] dark:text-[#E5E7EB]">
+                                <span class="choise-icn"></span>
+                                <span class="flex-1">
+                                    Soft Launch (we’re almost there)
+                                </span>
+                            </li>
+                            <li class="flex items-center gap-3 text-[#374151] dark:text-[#E5E7EB]">
+                                <span class="choise-icn"></span>
+                                <span class="flex-1">
+                                    Pay hourly billings
+                                </span>
+                            </li>
+                            <li class="flex items-center gap-3 text-[#374151] dark:text-[#E5E7EB]">
+                                <span class="choise-icn"></span>
+                                <span class="flex-1">
+                                    Pay more hourly billings since it was the big hit
+                                </span>
+                            </li>
+                            <li class="flex items-center gap-3 text-[#374151] dark:text-[#E5E7EB]">
+                                <span class="choise-icn"></span>
+                                <span class="flex-1">
+                                    Final Launch
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="choice-2" data-tilt>
+                        <div class="flex flex-col gap-6">
+                            <h3 class="text-[#111827] dark:text-[#F9FAFB] text-[21px] font-semibold">
+                                Or recruiting a team of results-driven product experts
+                            </h3>
+                            <ul class="flex flex-col gap-3">
+                                <li class="flex items-center gap-3 text-[#374151] dark:text-[#E5E7EB]">
+                                    <span class="choise-icn"></span>
+                                    <span class="flex-1">
+                                        Choose the package
+                                    </span>
+                                </li>
+                                <li class="flex items-center gap-3 text-[#374151] dark:text-[#E5E7EB]">
+                                    <span class="choise-icn"></span>
+                                    <span class="flex-1">
+                                        Send the tasks to the queue
+                                    </span>
+                                </li>
+                                <li class="flex items-center gap-3 text-[#374151] dark:text-[#E5E7EB]">
+                                    <span class="choise-icn"></span>
+                                    <span class="flex-1">
+                                        Revise & Launch 🚀
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <a href="#" class="primary-btn py-3 px-8 font-semibold">
+                            Choose this & Thank me later!
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End You have 2 choices Section  -->
+
+
+        <!-- Services Section  -->
+        <section class="py-16 lg:py-32 px-8 lg:px-0" id="services">
+            <div class="flex flex-col gap-10 lg:gap-16">
+
+                <header class="container flex flex-col gap-4">
+                    <h2 class="section-title">
+                        Services
+                    </h2>
+                    <p class="section-excerpt">
+                        For
+                        <span class="font-semibold">one monthly</span>
+                        fee, you can get everything you need to stand out.
+                    </p>
+                </header>
+
+                <div class="overflow-x-hidden relative">
+
+                    <div
+                        class="absolute z-10 lg:block hidden left-0 top-0 bottom-0 w-1/3 bg-gradient-to-r from-[#FFFAF4] to-[#fffaf400] dark:from-[#0E131E] dark:to-[#0E131E00]">
+                    </div>
+
+                    <div
+                        class="absolute z-10 lg:block hidden right-0 top-0 bottom-0 rotate-180 w-1/3 bg-gradient-to-r from-[#FFFAF4] to-[#fffaf400] dark:from-[#0E131E] dark:to-[#0E131E00]">
+                    </div>
+
+                    <!-- Services Container  -->
+                    <div class="grid grid-cols-1 lg:grid-cols-5 gap-[30px]">
+                        <!-- Services item  -->
+                        <div class="service-card right">
+                            <span class="service-card-icn bg-[#FFFAF4] dark:bg-[#881337]">
+                                <img src="assets/images/icons/ser-icn-1.svg" width="32" height="32" alt="service icon"
+                                    class="dark:hidden block">
+                                <img src="assets/images/icons/ser-icn-1-drk.svg" width="32" height="32"
+                                    alt="service icon" class="hidden dark:block">
+                            </span>
+                            <div class="flex flex-col gap-2">
+                                <h3 class="service-card-title">
+                                    User Research
+                                </h3>
+                                <p class="service-card-exc">
+                                    Understand user behaviors, needs, and motivations.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- End Services item  -->
+
+                        <!-- Services item  -->
+                        <div class="service-card right">
+                            <span class="service-card-icn bg-[#FFFAF4] dark:bg-[#881337]">
+                                <img src="assets/images/icons/ser-icn-1.svg" width="32" height="32" alt="service icon"
+                                    class="dark:hidden block">
+                                <img src="assets/images/icons/ser-icn-1-drk.svg" width="32" height="32"
+                                    alt="service icon" class="hidden dark:block">
+                            </span>
+                            <div class="flex flex-col gap-2">
+                                <h3 class="service-card-title">
+                                    User Research
+                                </h3>
+                                <p class="service-card-exc">
+                                    Understand user behaviors, needs, and motivations.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- End Services item  -->
+
+                        <!-- Services item  -->
+                        <div class="service-card right">
+                            <span class="service-card-icn bg-[#FFFAF4] dark:bg-[#1E3A8A]">
+                                <img src="assets/images/icons/ser-icn-2.svg" width="32" height="32" alt="service icon"
+                                    class="dark:hidden block">
+                                <img src="assets/images/icons/ser-icn-2-drk.svg" width="32" height="32"
+                                    alt="service icon" class="hidden dark:block">
+                            </span>
+                            <div class="flex flex-col gap-2">
+                                <h3 class="service-card-title">
+                                    Market Research
+                                </h3>
+                                <p class="service-card-exc">
+                                    Understand your market to maintain competitiveness.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- End Services item  -->
+
+                        <!-- Services item  -->
+                        <div class="service-card right">
+                            <span class="service-card-icn bg-[#FFFAF4] dark:bg-[#312E81]">
+                                <img src="assets/images/icons/ser-icn-3.svg" width="32" height="32" alt="service icon"
+                                    class="dark:hidden block">
+                                <img src="assets/images/icons/ser-icn-3-drk.svg" width="32" height="32"
+                                    alt="service icon" class="hidden dark:block">
+                            </span>
+                            <div class="flex flex-col gap-2">
+                                <h3 class="service-card-title">
+                                    User Testing
+                                </h3>
+                                <p class="service-card-exc">
+                                    Unlock powerful research insights, every step of the way.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- End Services item  -->
+
+                        <!-- Services item  -->
+                        <div class="service-card right">
+                            <span class="service-card-icn bg-[#FFFAF4] dark:bg-[#312E81]">
+                                <img src="assets/images/icons/ser-icn-3.svg" width="32" height="32" alt="service icon"
+                                    class="dark:hidden block">
+                                <img src="assets/images/icons/ser-icn-3-drk.svg" width="32" height="32"
+                                    alt="service icon" class="hidden dark:block">
+                            </span>
+                            <div class="flex flex-col gap-2">
+                                <h3 class="service-card-title">
+                                    User Testing
+                                </h3>
+                                <p class="service-card-exc">
+                                    Unlock powerful research insights, every step of the way.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- End Services item  -->
+
+                        <!-- Services item  -->
+                        <div class="service-card left">
+                            <span class="service-card-icn bg-[#FFFAF4] dark:bg-[#1E3A8A]">
+                                <img src="assets/images/icons/ser-icn-4.svg" width="32" height="32" alt="service icon"
+                                    class="dark:hidden block">
+                                <img src="assets/images/icons/ser-icn-4-drk.svg" width="32" height="32"
+                                    alt="service icon" class="hidden dark:block">
+                            </span>
+                            <div class="flex flex-col gap-2">
+                                <h3 class="service-card-title">
+                                    Microcopy
+                                </h3>
+                                <p class="service-card-exc">
+                                    Writing that addresses people's contexts, needs, and behaviors.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- End Services item  -->
+                        <!-- Services item  -->
+                        <div class="service-card left">
+                            <span class="service-card-icn bg-[#FFFAF4] dark:bg-[#1E3A8A]">
+                                <img src="assets/images/icons/ser-icn-4.svg" width="32" height="32" alt="service icon"
+                                    class="dark:hidden block">
+                                <img src="assets/images/icons/ser-icn-4-drk.svg" width="32" height="32"
+                                    alt="service icon" class="hidden dark:block">
+                            </span>
+                            <div class="flex flex-col gap-2">
+                                <h3 class="service-card-title">
+                                    Microcopy
+                                </h3>
+                                <p class="service-card-exc">
+                                    Writing that addresses people's contexts, needs, and behaviors.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- End Services item  -->
+
+                        <!-- Services item  -->
+                        <div class="service-card left">
+                            <span class="service-card-icn bg-[#FFFAF4] dark:bg-[#075985]">
+                                <img src="assets/images/icons/ser-icn-2.svg" width="32" height="32" alt="service icon"
+                                    class="dark:hidden block">
+                                <img src="assets/images/icons/ser-icn-2-drk.svg" width="32" height="32"
+                                    alt="service icon" class="hidden dark:block">
+                            </span>
+                            <div class="flex flex-col gap-2">
+                                <h3 class="service-card-title">
+                                    Usability Testing
+                                </h3>
+                                <p class="service-card-exc">
+                                    Design as you know it is out the door. Design as you want it just arrived.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- End Services item  -->
+
+                        <!-- Services item  -->
+                        <div class="service-card left">
+                            <span class="service-card-icn bg-[#FFFAF4] dark:bg-[#0C4A6E]">
+                                <img src="assets/images/icons/ser-icn-5.svg" width="32" height="32" alt="service icon"
+                                    class="dark:hidden block">
+                                <img src="assets/images/icons/ser-icn-5-drk.svg" width="32" height="32"
+                                    alt="service icon" class="hidden dark:block">
+                            </span>
+                            <div class="flex flex-col gap-2">
+                                <h3 class="service-card-title">
+                                    UX Writing
+                                </h3>
+                                <p class="service-card-exc">
+                                    Writing that addresses people's contexts, needs, and behaviors.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- End Services item  -->
+
+                        <!-- Services item  -->
+                        <div class="service-card left">
+                            <span class="service-card-icn bg-[#FFFAF4] dark:bg-[#0C4A6E]">
+                                <img src="assets/images/icons/ser-icn-5.svg" width="32" height="32" alt="service icon"
+                                    class="dark:hidden block">
+                                <img src="assets/images/icons/ser-icn-5-drk.svg" width="32" height="32"
+                                    alt="service icon" class="hidden dark:block">
+                            </span>
+                            <div class="flex flex-col gap-2">
+                                <h3 class="service-card-title">
+                                    UX Writing
+                                </h3>
+                                <p class="service-card-exc">
+                                    Writing that addresses people's contexts, needs, and behaviors.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- End Services item  -->
+
+                        <!-- Services item  -->
+                        <div class="service-card right">
+                            <span class="service-card-icn bg-[#FFFAF4] dark:bg-[#365314]">
+                                <img src="assets/images/icons/ser-icn-6.svg" width="32" height="32" alt="service icon"
+                                    class="dark:hidden block">
+                                <img src="assets/images/icons/ser-icn-6-drk.svg" width="32" height="32"
+                                    alt="service icon" class="hidden dark:block">
+                            </span>
+                            <div class="flex flex-col gap-2">
+                                <h3 class="service-card-title">
+                                    Design Sprints
+                                </h3>
+                                <p class="service-card-exc">
+                                    Reduce the risk when bringing a new product or a feature to the market.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- End Services item  -->
+
+                        <!-- Services item  -->
+                        <div class="service-card right">
+                            <span class="service-card-icn bg-[#FFFAF4] dark:bg-[#365314]">
+                                <img src="assets/images/icons/ser-icn-6.svg" width="32" height="32" alt="service icon"
+                                    class="dark:hidden block">
+                                <img src="assets/images/icons/ser-icn-6-drk.svg" width="32" height="32"
+                                    alt="service icon" class="hidden dark:block">
+                            </span>
+                            <div class="flex flex-col gap-2">
+                                <h3 class="service-card-title">
+                                    Design Sprints
+                                </h3>
+                                <p class="service-card-exc">
+                                    Reduce the risk when bringing a new product or a feature to the market.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- End Services item  -->
+
+                        <!-- Services item  -->
+                        <div class="service-card right">
+                            <span class="service-card-icn bg-[#FFFAF4] dark:bg-[#7C2D12]">
+                                <img src="assets/images/icons/ser-icn-7.svg" width="32" height="32" alt="service icon"
+                                    class="dark:hidden block">
+                                <img src="assets/images/icons/ser-icn-7-drk.svg" width="32" height="32"
+                                    alt="service icon" class="hidden dark:block">
+                            </span>
+                            <div class="flex flex-col gap-2">
+                                <h3 class="service-card-title">
+                                    Product Strategy
+                                </h3>
+                                <p class="service-card-exc">
+                                    Design as you know it is out the door. Design as you want it just arrived.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- End Services item  -->
+
+                        <!-- Services item  -->
+                        <div class="service-card right">
+                            <span class="service-card-icn bg-[#FFFAF4] dark:bg-[#134E4A]">
+                                <img src="assets/images/icons/ser-icn-8.svg" width="32" height="32" alt="service icon"
+                                    class="dark:hidden block">
+                                <img src="assets/images/icons/ser-icn-8-drk.svg" width="32" height="32"
+                                    alt="service icon" class="hidden dark:block">
+                            </span>
+                            <div class="flex flex-col gap-2">
+                                <h3 class="service-card-title">
+                                    Brand Management
+                                </h3>
+                                <p class="service-card-exc">
+                                    Design as you know it is out the door. Design as you want it just arrived.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- End Services item  -->
+
+                        <!-- Services item  -->
+                        <div class="service-card right">
+                            <span class="service-card-icn bg-[#FFFAF4] dark:bg-[#7C2D12]">
+                                <img src="assets/images/icons/ser-icn-7.svg" width="32" height="32" alt="service icon"
+                                    class="dark:hidden block">
+                                <img src="assets/images/icons/ser-icn-7-drk.svg" width="32" height="32"
+                                    alt="service icon" class="hidden dark:block">
+                            </span>
+                            <div class="flex flex-col gap-2">
+                                <h3 class="service-card-title">
+                                    Product Strategy
+                                </h3>
+                                <p class="service-card-exc">
+                                    Design as you know it is out the door. Design as you want it just arrived.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- End Services item  -->
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- End Services Section  -->
+
+
+        <!-- Deliver with Confidence section  -->
+        <section class="md:py-32 py-16 px-8 lg:px-0">
+            <div class="container grid grid-cols-1 lg:grid-cols-3 gap-[30px]">
+                <header class="flex flex-col gap-4">
+                    <h2 class="section-title text-start">
+                        Deliver with Confidence, Cut Off Uncertainty
+                    </h2>
+                    <p class="section-excerpt text-start">
+                        Our clients seen a
+                        <span class="text-[#34D399]">+37%</span> increase in feature
+                        delivery.
+                    </p>
+                </header>
+
+                <div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
+                    <div
+                        class="flex flex-col gap-6 bg-secondary lg:bg-transparent dark:bg-[#131A2B] lg:dark:bg-transparent p-8 lg:p-0 rounded-2xl">
+                        <img src="assets/images/icons/del-1.svg" width="33" height="19" alt="icon">
+                        <div class="flex flex-col gap-3">
+                            <h3 class="font-bold text-[21px] text-[#374151] dark:text-[#F9FAFB]">
+                                Ship confidently
+                            </h3>
+                            <p class="text-sm text-[#374151] dark:text-[#9CA3AF]">
+                                With Design**, you'll have everything you need to design the best user experience
+                                possible.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- ==================== -->
+
+                    <div
+                        class="flex flex-col gap-6 bg-secondary lg:bg-transparent dark:bg-[#131A2B] lg:dark:bg-transparent p-8 lg:p-0 rounded-2xl">
+                        <img src="assets/images/icons/del-2.svg" width="32" height="19" alt="icon">
+                        <div class="flex flex-col gap-3">
+                            <h3 class="font-bold text-[21px] text-[#374151] dark:text-[#F9FAFB]">
+                                Ship faster
+                            </h3>
+                            <p class="text-sm text-[#374151] dark:text-[#9CA3AF]">
+                                Always on time deliveries with a speed that will blow your mind.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- ==================== -->
+
+                    <div
+                        class="flex flex-col gap-6 bg-secondary lg:bg-transparent dark:bg-[#131A2B] lg:dark:bg-transparent p-8 lg:p-0 rounded-2xl">
+                        <img src="assets/images/icons/del-3.svg" width="33" height="34" alt="icon">
+                        <div class="flex flex-col gap-3">
+                            <h3 class="font-bold text-[21px] text-[#374151] dark:text-[#F9FAFB]">
+                                Save time
+                            </h3>
+                            <p class="text-sm text-[#374151] dark:text-[#9CA3AF]">
+                                Hiring a designer is a headache. say bye to scanning through 100s of portfolios and
+                                endless negotiations.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- ==================== -->
+
+                    <div
+                        class="flex flex-col gap-6 bg-secondary lg:bg-transparent dark:bg-[#131A2B] lg:dark:bg-transparent p-8 lg:p-0 rounded-2xl">
+                        <img src="assets/images/icons/del-4.svg" width="33" height="38" alt="icon">
+                        <div class="flex flex-col gap-3">
+                            <h3 class="font-bold text-[21px] text-[#374151] dark:text-[#F9FAFB]">
+                                Save money
+                            </h3>
+                            <p class="text-sm text-[#374151] dark:text-[#9CA3AF]">
+                                No more negotiating over price or getting stuck with an unreliable freelancer or an
+                                expensive agency.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- ==================== -->
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- End Deliver with Confidence Section  -->
+
+
+        <!-- Start Testimonials section  -->
+        <section class="md:py-32 py-16 px-8 lg:px-0">
+            <div class="container flex flex-col gap-10 lg:gap-16">
+                <header class="flex flex-col gap-4">
+                    <h2 class="section-title">
+                        Testimonials
+                    </h2>
+                    <p class="section-excerpt">
+                        We don’t settle for less than a perfect experience.
+                    </p>
+                </header>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-[30px]">
+
+                    <!-- testimonials  item -->
+                    <div class="bg-secondary flex flex-col gap-12 dark:bg-[#131A2B] p-8 rounded-2xl group">
+                        <img src="assets/images/testimonials-logo-1.png" width="43" height="47" alt="Logo"
+                            class="mix-blend-luminosity group-hover:mix-blend-normal transition-all duration-300">
+                        <p class="text-[21px] text-[#374151] dark:text-[#9CA3AF]">
+                            DesignPeer is an outstanding results-driven design team. They deliver exceptional outcomes
+                            while working within tight deadlines, without compromising quality. Their talent-on-demand
+                            approach provides easy access to top-notch design expertise. Highly recommended!
+                        </p>
+                        <div class="flex gap-3 mt-auto">
+                            <div class="w-10 h-10 rounded-full overflow-hidden">
+                                <img src="assets/images/review.jpg" width="40" height="40" alt="review"
+                                    class="w-full h-full object-cover">
+                            </div>
+                            <div class="">
+                                <h6 class="font-medium text-[#6B7280] dark:text-[#9CA3AF]">
+                                    Mohaned Saleh
+                                </h6>
+                                <p class="text-sm text-[#6B7280] dark:text-[#9CA3AF]">
+                                    Co-founder, Yoliday
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- testimonials  item -->
+                    <div class="bg-secondary flex flex-col gap-12 dark:bg-[#131A2B] p-8 rounded-2xl group">
+                        <img src="assets/images/testimonials-logo-1.png" width="43" height="47" alt="Logo"
+                            class="mix-blend-luminosity group-hover:mix-blend-normal transition-all duration-300">
+                        <p class="text-[21px] text-[#374151] dark:text-[#9CA3AF]">
+                            the box, and their creative design sense. The strongest attribute is their talent for
+                            creating compelling and seamless UX stories from different perspectives and while wearing
+                            different hats.
+
+                        </p>
+                        <div class="flex gap-3 mt-auto">
+                            <div class="w-10 h-10 rounded-full overflow-hidden">
+                                <img src="assets/images/review.jpg" width="40" height="40" alt="review"
+                                    class="w-full h-full object-cover">
+                            </div>
+                            <div class="">
+                                <h6 class="font-medium text-[#6B7280] dark:text-[#9CA3AF]">
+                                    Mohaned Saleh
+                                </h6>
+                                <p class="text-sm text-[#6B7280] dark:text-[#9CA3AF]">
+                                    Co-founder, Yoliday
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- testimonials  item -->
+                    <div class="bg-secondary flex flex-col gap-12 dark:bg-[#131A2B] p-8 rounded-2xl group">
+                        <img src="assets/images/testimonials-logo-1.png" width="43" height="47" alt="Logo"
+                            class="mix-blend-luminosity group-hover:mix-blend-normal transition-all duration-300">
+                        <p class="text-[21px] text-[#374151] dark:text-[#9CA3AF]">
+                            I was, and continue to be, impressed by DesignPeer’s ingenuity, ability to think outside the
+                            box, and their creative design sense. The strongest attribute is their talent for creating
+                            compelling and seamless UX stories from different perspectives and while wearing different
+                            hats.
+                        </p>
+                        <div class="flex gap-3 mt-auto">
+                            <div class="w-10 h-10 rounded-full overflow-hidden">
+                                <img src="assets/images/review.jpg" width="40" height="40" alt="review"
+                                    class="w-full h-full object-cover">
+                            </div>
+                            <div class="">
+                                <h6 class="font-medium text-[#6B7280] dark:text-[#9CA3AF]">
+                                    Mohaned Saleh
+                                </h6>
+                                <p class="text-sm text-[#6B7280] dark:text-[#9CA3AF]">
+                                    Co-founder, Yoliday
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <!-- End Testimonials Section  -->
+
+
+        <!-- Start Pricing section  -->
+        <section class="md:py-32 py-16 px-8 lg:px-0" id="pricing">
+            <div class="container flex flex-col gap-10 lg:gap-16">
+                <header class="flex flex-col gap-4">
+                    <h2 class="section-title">
+                        Simple, transparent pricing
+                    </h2>
+                    <p class="section-excerpt">
+                        Best in class products everytime.
+                    </p>
+                </header>
+
+                <!-- pricing List  -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-[30px]">
+                    <div class="flex flex-col gap-4">
+                        <div
+                            class="p-8 rounded-2xl bg-white dark:bg-[#131A2A] flex flex-col gap-8 dark:border dark:border-gray-800 shadow-shadow-1">
+                            <div class="flex flex-col gap-4">
+                                <span class="text-4xl font-bold text-[#475467] dark:text-[#9CA3AF]">Standard</span>
+                                <p class="text-[#475467] dark:text-[#9CA3AF]">
+                                    Ideal for early-stage startups seeking product-market fit and minimal design
+                                    assistance.
+                                </p>
+                            </div>
+                            <div class="flex flex-col gap-3">
+                                <a href="#"
+                                    class="py-3 px-5 font-semibold text-white bg-[#111827] dark:bg-[#F9FAFB] dark:text-[#111827] rounded-lg flex justify-center">
+                                    Get started
+                                </a>
+                                <a href="#" class="py-3 px-5 font-semibold secondary-btn rounded-lg">
+                                    Book 15mins call
+                                </a>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="p-8 flex flex-col gap-6">
+                                <div class="flex flex-col gap-1">
+                                    <b class="font-semibold text-[#101828] dark:text-[#F9FAFB]">
+                                        FEATURES
+                                    </b>
+                                    <p class="text-[#475467] dark:text-[#E5E7EB]">
+                                        Best price, best value
+                                    </p>
+                                </div>
+                                <ul class="flex flex-col gap-4">
+                                    <li class="text-[#475467] dark:text-[#E5E7EB] flex items-center gap-3.5">
+                                        <img src="assets/images/icons/check-circle-2.svg" width="24" height="24"
+                                            alt="check-circle" class="shrink-0">
+                                        UX Research
+                                    </li>
+                                    <li class="text-[#475467] dark:text-[#E5E7EB] flex items-center gap-3.5">
+                                        <img src="assets/images/icons/check-circle-2.svg" width="24" height="24"
+                                            alt="check-circle" class="shrink-0">
+                                        Product Design
+                                    </li>
+                                    <li class="text-[#475467] dark:text-[#E5E7EB] flex items-center gap-3.5">
+                                        <img src="assets/images/icons/check-circle-2.svg" width="24" height="24"
+                                            alt="check-circle" class="shrink-0">
+                                        UX Testing
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <div
+                            class="p-8 rounded-2xl bg-white dark:bg-[#131A2A] flex flex-col gap-8 dark:border dark:border-gray-800 shadow-shadow-1">
+                            <div class="flex flex-col gap-4">
+                                <div class="flex justify-between items-center gap-2 flex-wrap">
+                                    <span class="text-4xl font-bold text-[#475467] dark:text-[#9CA3AF]">Premium</span>
+                                    <span
+                                        class="text-xs text-primary px-3 py-1 rounded-full bg-[#F9F5FF] dark:bg-[#1F2937]">Popular</span>
+                                </div>
+                                <p class="text-[#475467] dark:text-[#9CA3AF]">
+                                    Excellent for established startups focused on growth and requiring enhanced design
+                                    solutions.
+                                </p>
+                            </div>
+                            <div class="flex flex-col gap-3">
+                                <a href="#" class="py-3 px-5 font-semibold  primary-btn">
+                                    Get started
+                                </a>
+                                <a href="#" class="py-3 px-5 font-semibold secondary-btn rounded-lg">
+                                    Book 15mins call
+                                </a>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="p-8 flex flex-col gap-6">
+                                <div class="flex flex-col gap-1">
+                                    <b class="font-semibold text-[#101828] dark:text-[#F9FAFB]">
+                                        FEATURES
+                                    </b>
+                                    <p class="text-[#475467] dark:text-[#E5E7EB]">
+                                        Everything in our
+                                        <b>standard plan plus</b>
+                                    </p>
+                                </div>
+                                <ul class="flex flex-col gap-4">
+                                    <li class="text-[#475467] dark:text-[#E5E7EB] flex items-center gap-3.5">
+                                        <img src="assets/images/icons/check-circle-2.svg" width="24" height="24"
+                                            alt="check-circle" class="shrink-0">
+                                        Product Strategy
+                                    </li>
+                                    <li class="text-[#475467] dark:text-[#E5E7EB] flex items-center gap-3.5">
+                                        <img src="assets/images/icons/check-circle-2.svg" width="24" height="24"
+                                            alt="check-circle" class="shrink-0">
+                                        Design System
+                                    </li>
+                                    <li class="text-[#475467] dark:text-[#E5E7EB] flex items-center gap-3.5">
+                                        <img src="assets/images/icons/check-circle-2.svg" width="24" height="24"
+                                            alt="check-circle" class="shrink-0">
+                                        UX Writing
+                                    </li>
+                                    <li class="text-[#475467] dark:text-[#E5E7EB] flex items-center gap-3.5">
+                                        <img src="assets/images/icons/check-circle-2.svg" width="24" height="24"
+                                            alt="check-circle" class="shrink-0">
+                                        Illustrations
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Book call -->
+                <div
+                    class="shadow-shadow-1 bg-white dark:bg-[#131A2A] dark:border dark:border-gray-800 flex flex-col lg:flex-row lg:items-center gap-8 justify-between p-8 rounded-2xl">
+
+                    <div class="flex flex-col gap-1">
+                        <h6 class="text-2xl font-semibold text-[#101828] dark:text-[#F9FAFB]">
+                            One-off Project
+                        </h6>
+                        <p class="text-[#475467] dark:text-[#9CA3AF]">
+                            Fixed budget, timeline and scope.
+                        </p>
+                    </div>
+                    <button class="secondary-btn py-3 px-5 ">
+                        Book 15mins call
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="container mx-auto">
+
+
+
+
+            </div>
+        </section>
+        <!-- End Pricing Section  -->
+
+
+        <!-- Start FAQs section  -->
+        <section class="md:pb-32 px-8 lg:px-0">
+            <div class="container flex flex-col gap-6 lg:gap-16">
+                <header class="flex flex-col gap-4">
+                    <h2 class="section-title">
+                        FAQs
+                    </h2>
+                </header>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                    <!-- FAQ Item  -->
+                    <div class="flex flex-col gap-2">
+                        <h3 class="font-semibold text-[#101828] dark:text-[#E5E7EB]">
+                            How does your pricing work?
+                        </h3>
+                        <p class="text-sm text-[#475467] dark:text-[#94A3B8]">
+                            You only pay a fixed price once a month for our services. No
+                            additional fees are included.
+                        </p>
+                    </div>
+
+                    <!-- FAQ Item  -->
+                    <div class="flex flex-col gap-2">
+                        <h3 class="font-semibold text-[#101828] dark:text-[#E5E7EB]">
+                            How do I send you my requests?
+                        </h3>
+                        <p class="text-sm text-[#475467] dark:text-[#94A3B8]">
+                            Our process starts with you putting your requests on a
+                            Trello board, which our team will review and begin work on.
+                            You will have access to the Trello board and can give
+                            feedback and request revisions at any time..
+                        </p>
+                    </div>
+
+                    <!-- FAQ Item  -->
+                    <div class="flex flex-col gap-2">
+                        <h3 class="font-semibold text-[#101828] dark:text-[#E5E7EB]">
+                            How many revisions can I get?
+                        </h3>
+                        <p class="text-sm text-[#475467] dark:text-[#94A3B8]">
+                            DesignPeer offers unlimited revisions, so you can request as many revisions as needed until
+                            you are satisfied with the final product.
+                        </p>
+                    </div>
+
+                    <!-- FAQ Item  -->
+                    <div class="flex flex-col gap-2">
+                        <h3 class="font-semibold text-[#101828] dark:text-[#E5E7EB]">
+                            How long does it take to complete a request?
+                        </h3>
+                        <p class="text-sm text-[#475467] dark:text-[#94A3B8]">
+                            The turnaround time for a project will depend on the scope of work and the number of hours
+                            required. We usually deliver within 5 working days or less.
+                        </p>
+                    </div>
+                    <!-- FAQ Item  -->
+                    <div class="flex flex-col gap-2">
+                        <h3 class="font-semibold text-[#101828] dark:text-[#E5E7EB]">
+                            How does your pricing work?
+                        </h3>
+                        <p class="text-sm text-[#475467] dark:text-[#94A3B8]">
+                            You only pay a fixed price once a month for our services. No additional fees are included.
+                        </p>
+                    </div>
+
+                    <!-- FAQ Item  -->
+                    <div class="flex flex-col gap-2">
+                        <h3 class="font-semibold text-[#101828] dark:text-[#E5E7EB]">
+                            Do you work with startups?
+                        </h3>
+                        <p class="text-sm text-[#475467] dark:text-[#94A3B8]">
+                            Yes, we work mainly with startups that aim to prosper in their industries. We are excited to
+                            partner with disruptors who look to create products their customers love.
+                        </p>
+                    </div>
+                    <!-- FAQ Item  -->
+                    <div class="flex flex-col gap-2">
+                        <h3 class="font-semibold text-[#101828] dark:text-[#E5E7EB]">
+                            How do you handle feedback and changes to a project?
+                        </h3>
+                        <p class="text-sm text-[#475467] dark:text-[#94A3B8]">
+                            We welcome revisions and changes to a project and will work with you to ensure that the
+                            final product meets your needs.
+                        </p>
+                    </div>
+
+                    <!-- FAQ Item  -->
+                    <div class="flex flex-col gap-2">
+                        <h3 class="font-semibold text-[#101828] dark:text-[#E5E7EB]">
+                            How do you ensure the confidentiality of my project?
+                        </h3>
+                        <p class="text-sm text-[#475467] dark:text-[#94A3B8]">
+                            We understand the importance of confidentiality in product design and development. We can
+                            sign a non-disclosure agreement with you at the start of the project, and all work will be
+                            done under strict confidentiality guidelines.
+                        </p>
+                    </div>
+                    <!-- FAQ Item  -->
+                    <div class="flex flex-col gap-2">
+                        <h3 class="font-semibold text-[#101828] dark:text-[#E5E7EB]">
+                            Do I have to sign a long-term contract?
+                        </h3>
+                        <p class="text-sm text-[#475467] dark:text-[#94A3B8]">
+                            No, you subscribe to a monthly subscription so you don’t have to be restricted with retainer
+                            contracts.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div
+                    class="pt-6 lg:pt-0 border-t border-gray-300 dark:border-t-[#374151] lg:border-none flex flex-col gap-8 lg:flex-row items-start lg:items-center justify-between">
+                    <div class="flex flex-col gap-2">
+                        <h3 class="font-semibold text-[#101828] dark:text-[#E5E7EB] leading-8">
+                            Still have questions?
+                        </h3>
+                        <p class="text-sm text-[#475467] dark:text-[#94A3B8]">
+                            Can’t find the answer you’re looking for? Please chat to our
+                            friendly team.
+                        </p>
+                    </div>
+                    <a href="#" class="rounded-lg border font-semibold py-3 px-5 secondary-btn">
+                        Get in touch
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- End FAQs Section  -->
+
+
+    </main>
+    <!-- end DP main page content  -->
+
+
+    <!-- start DP footer  -->
+    <footer class="px-8 lg:px-0">
+        <div class="container">
+
+            <div
+                class="py-16 flex flex-col lg:flex-row gap-10 lg:items-center border-b border-b-gray-300 dark:border-b-gray-700">
+                <div class="flex flex-col gap-3 flex-1">
+                    <h4 class="section-title text-start">
+                        Get your product 10x better!
+                    </h4>
+                    <p class="section-excerpt text-start">
+                        Let’s discuss how we can take your product to the next level!
+                    </p>
+                </div>
+                <a href="#" class="rounded-lg py-6 px-12 text-xl primary-btn text-center">
+                    Book a free consultation!
+                </a>
+            </div>
+            <div class="py-16 flex flex-col gap-8 ">
+                <nav>
+                    <ul class="flex flex-wrap gap-6 lg:gap-10 justify-center items-center">
+                        <li>
+                            <a href="#"
+                                class="font-Inter text-[#6B7280] dark:text-[#9CA3AF] transition-opacity duration-300 hover:opacity-70">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="font-Inter text-[#6B7280] dark:text-[#9CA3AF] transition-opacity duration-300 hover:opacity-70">
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="font-Inter text-[#6B7280] dark:text-[#9CA3AF] transition-opacity duration-300 hover:opacity-70">
+                                Jobs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="font-Inter text-[#6B7280] dark:text-[#9CA3AF] transition-opacity duration-300 hover:opacity-70">
+                                Press
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="font-Inter text-[#6B7280] dark:text-[#9CA3AF] transition-opacity duration-300 hover:opacity-70">
+                                Accessibility
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="font-Inter text-[#6B7280] dark:text-[#9CA3AF] transition-opacity duration-300 hover:opacity-70">
+                                Partners
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="flex flex-wrap items-center justify-center gap-7">
+                    <a href=" #" class="" aria-label="face">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M20 10C20 4.477 15.523 0 10 0C4.477 0 0 4.477 0 10C0 14.991 3.657 19.128 8.438 19.878V12.891H5.898V10H8.438V7.797C8.438 5.291 9.93 3.907 12.215 3.907C13.309 3.907 14.453 4.102 14.453 4.102V6.562H13.193C11.95 6.562 11.563 7.333 11.563 8.124V10H14.336L13.893 12.89H11.563V19.878C16.343 19.128 20 14.991 20 10Z"
+                                fill="#6B7280" />
+                        </svg>
+                    </a>
+                    <a href="#" class="" aria-label="insta">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M10.315 0C12.745 0 13.099 0.0129999 14.123 0.0599999C15.187 0.109 15.914 0.278 16.55 0.525C17.2175 0.775874 17.8222 1.16936 18.322 1.678C18.8306 2.17777 19.2241 2.7825 19.475 3.45C19.722 4.086 19.891 4.813 19.94 5.877C19.988 6.944 20 7.284 20 10V10.08C20 12.723 19.988 13.067 19.94 14.123C19.891 15.187 19.722 15.914 19.475 16.55C19.2241 17.2175 18.8306 17.8222 18.322 18.322C17.8222 18.8306 17.2175 19.2241 16.55 19.475C15.914 19.722 15.187 19.891 14.123 19.94C13.056 19.988 12.716 20 10 20H9.92C7.277 20 6.933 19.988 5.877 19.94C4.813 19.891 4.086 19.722 3.45 19.475C2.7825 19.2241 2.17777 18.8306 1.678 18.322C1.16936 17.8222 0.775874 17.2175 0.525 16.55C0.278 15.914 0.109 15.187 0.0599999 14.123C0.0129999 13.099 0 12.744 0 10.315V9.685C0 7.255 0.0129999 6.901 0.0599999 5.877C0.109 4.813 0.278 4.086 0.525 3.45C0.775874 2.7825 1.16936 2.17777 1.678 1.678C2.17777 1.16936 2.7825 0.775874 3.45 0.525C4.086 0.278 4.813 0.109 5.877 0.0599999C6.901 0.0129999 7.256 0 9.685 0H10.315ZM10.234 1.802H9.766C7.31 1.802 6.982 1.813 5.959 1.86C4.984 1.905 4.455 2.067 4.102 2.204C3.635 2.386 3.302 2.602 2.952 2.952C2.602 3.302 2.386 3.635 2.204 4.102C2.067 4.455 1.904 4.984 1.86 5.959C1.813 6.982 1.802 7.31 1.802 9.766V10.234C1.802 12.69 1.813 13.018 1.86 14.041C1.905 15.016 2.067 15.545 2.204 15.898C2.386 16.364 2.603 16.698 2.952 17.048C3.302 17.398 3.635 17.614 4.102 17.796C4.455 17.933 4.984 18.096 5.959 18.14C7.013 18.188 7.329 18.198 10 18.198H10.08C12.677 18.198 12.997 18.188 14.04 18.14C15.016 18.095 15.545 17.933 15.898 17.796C16.364 17.614 16.698 17.398 17.048 17.048C17.398 16.698 17.614 16.365 17.796 15.898C17.933 15.545 18.096 15.016 18.14 14.041C18.188 12.986 18.198 12.671 18.198 10V9.92C18.198 7.323 18.188 7.003 18.14 5.96C18.095 4.984 17.933 4.455 17.796 4.102C17.6358 3.66757 17.3802 3.2746 17.048 2.952C16.7254 2.61986 16.3324 2.36426 15.898 2.204C15.545 2.067 15.016 1.904 14.041 1.86C13.018 1.813 12.69 1.802 10.234 1.802ZM10 4.865C10.6743 4.865 11.3421 4.99782 11.9651 5.25588C12.5881 5.51394 13.1542 5.89218 13.631 6.36901C14.1078 6.84584 14.4861 7.41191 14.7441 8.03492C15.0022 8.65793 15.135 9.32566 15.135 10C15.135 10.6743 15.0022 11.3421 14.7441 11.9651C14.4861 12.5881 14.1078 13.1542 13.631 13.631C13.1542 14.1078 12.5881 14.4861 11.9651 14.7441C11.3421 15.0022 10.6743 15.135 10 15.135C8.63811 15.135 7.33201 14.594 6.36901 13.631C5.40601 12.668 4.865 11.3619 4.865 10C4.865 8.63811 5.40601 7.33201 6.36901 6.36901C7.33201 5.40601 8.63811 4.865 10 4.865ZM10 6.667C9.11603 6.667 8.26827 7.01815 7.64321 7.64321C7.01815 8.26827 6.667 9.11603 6.667 10C6.667 10.884 7.01815 11.7317 7.64321 12.3568C8.26827 12.9818 9.11603 13.333 10 13.333C10.884 13.333 11.7317 12.9818 12.3568 12.3568C12.9818 11.7317 13.333 10.884 13.333 10C13.333 9.11603 12.9818 8.26827 12.3568 7.64321C11.7317 7.01815 10.884 6.667 10 6.667ZM15.338 3.462C15.6563 3.462 15.9615 3.58843 16.1865 3.81347C16.4116 4.03852 16.538 4.34374 16.538 4.662C16.538 4.98026 16.4116 5.28548 16.1865 5.51053C15.9615 5.73557 15.6563 5.862 15.338 5.862C15.0197 5.862 14.7145 5.73557 14.4895 5.51053C14.2644 5.28548 14.138 4.98026 14.138 4.662C14.138 4.34374 14.2644 4.03852 14.4895 3.81347C14.7145 3.58843 15.0197 3.462 15.338 3.462Z"
+                                fill="#6B7280" />
+                        </svg>
+                    </a>
+                    <a href="#" class="" aria-label="Twitter">
+                        <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.29 16.2534C13.837 16.2534 17.965 10.0004 17.965 4.5784C17.965 4.4004 17.965 4.2234 17.953 4.0484C18.7562 3.46693 19.4493 2.74701 20 1.9224C19.2511 2.2544 18.4566 2.47216 17.643 2.5684C18.4996 2.05546 19.1408 1.24875 19.447 0.298398C18.6417 0.776285 17.7607 1.11313 16.842 1.2944C16.2234 0.636163 15.405 0.200233 14.5136 0.0541031C13.6222 -0.0920265 12.7075 0.0597974 11.9111 0.486067C11.1147 0.912337 10.4811 1.58927 10.1083 2.41206C9.7355 3.23485 9.64437 4.15758 9.849 5.0374C8.21759 4.95564 6.6216 4.53172 5.16465 3.79317C3.70769 3.05461 2.42233 2.01792 1.392 0.750398C0.867318 1.6536 0.706589 2.72282 0.942536 3.74036C1.17848 4.75791 1.79337 5.64728 2.662 6.2274C2.00926 6.2085 1.37063 6.0329 0.8 5.7154V5.7674C0.800389 6.71469 1.1284 7.6327 1.7284 8.36576C2.3284 9.09881 3.16347 9.60179 4.092 9.7894C3.48781 9.95411 2.85389 9.97806 2.239 9.8594C2.50116 10.6749 3.01168 11.388 3.69913 11.899C4.38658 12.41 5.21657 12.6934 6.073 12.7094C5.22212 13.378 4.24779 13.8722 3.20573 14.1639C2.16367 14.4556 1.07432 14.539 0 14.4094C1.8766 15.6137 4.06019 16.2525 6.29 16.2494"
+                                fill="#6B7280" />
+                        </svg>
+                    </a>
+                    <a href="#" class="" aria-label="github">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M10 0C4.477 0 0 4.484 0 10.017C0 14.442 2.865 18.197 6.839 19.521C7.339 19.613 7.521 19.304 7.521 19.038C7.521 18.801 7.513 18.17 7.508 17.335C4.726 17.94 4.139 15.992 4.139 15.992C3.685 14.834 3.029 14.526 3.029 14.526C2.121 13.906 3.098 13.918 3.098 13.918C4.101 13.988 4.629 14.95 4.629 14.95C5.521 16.48 6.97 16.038 7.539 15.782C7.631 15.135 7.889 14.694 8.175 14.444C5.955 14.191 3.62 13.331 3.62 9.493C3.62 8.4 4.01 7.505 4.649 6.805C4.546 6.552 4.203 5.533 4.747 4.155C4.747 4.155 5.587 3.885 7.497 5.181C8.31277 4.95851 9.15444 4.84519 10 4.844C10.85 4.848 11.705 4.959 12.504 5.181C14.413 3.885 15.251 4.154 15.251 4.154C15.797 5.533 15.453 6.552 15.351 6.805C15.991 7.505 16.379 8.4 16.379 9.493C16.379 13.341 14.04 14.188 11.813 14.436C12.172 14.745 12.491 15.356 12.491 16.291C12.491 17.629 12.479 18.71 12.479 19.038C12.479 19.306 12.659 19.618 13.167 19.52C15.1583 18.8521 16.8893 17.5753 18.1155 15.87C19.3416 14.1648 20.0009 12.1173 20 10.017C20 4.484 15.522 0 10 0Z"
+                                fill="#6B7280" />
+                        </svg>
+                    </a>
+                    <a href="#" class="" aria-label="pintrest">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.51 20 20 15.52 20 10C20 4.48 15.51 0 10 0ZM16.605 4.61C17.8357 6.10931 18.5167 7.98437 18.535 9.924C18.254 9.87 15.434 9.295 12.592 9.653C12.527 9.512 12.472 9.36 12.408 9.208C12.231 8.79105 12.043 8.3789 11.844 7.972C14.989 6.692 16.421 4.848 16.605 4.61ZM10 1.475C12.17 1.475 14.154 2.288 15.662 3.623C15.51 3.839 14.219 5.564 11.182 6.703C9.783 4.133 8.232 2.028 7.993 1.703C8.65086 1.54922 9.32441 1.4727 10 1.475ZM6.367 2.278C7.51144 3.86431 8.56867 5.51175 9.534 7.213C5.542 8.276 2.017 8.253 1.638 8.253C1.91283 6.96013 2.48261 5.74822 3.3029 4.71179C4.12319 3.67537 5.17182 2.84245 6.367 2.278ZM1.453 10.01V9.75C1.823 9.76 5.965 9.815 10.228 8.535C10.478 9.012 10.705 9.5 10.922 9.988C10.813 10.021 10.694 10.053 10.586 10.086C6.182 11.506 3.839 15.389 3.644 15.715C2.23384 14.1495 1.45264 12.117 1.453 10.01ZM10 18.547C8.10143 18.5502 6.25667 17.9164 4.761 16.747C4.913 16.432 6.649 13.091 11.464 11.41C11.486 11.4 11.497 11.4 11.518 11.388C12.3303 13.4834 12.9407 15.6516 13.341 17.863C12.2858 18.317 11.1487 18.5498 10 18.547ZM14.761 17.082C14.675 16.562 14.219 14.067 13.102 10.998C15.781 10.575 18.124 11.269 18.416 11.367C18.2336 12.5201 17.8148 13.623 17.1858 14.6065C16.5568 15.59 15.7313 16.4328 14.761 17.082Z"
+                                fill="#6B7280" />
+                        </svg>
+                    </a>
+                </div>
+                <p class="text-center text-[#6B7280] dark:text-[#9CA3AF]">
+                    © 2023 DesignPeer, Inc. All rights reserved.
+                </p>
+            </div>
+
+
+        </div>
+    </footer>
+    <!-- end DP footer  -->
+
+    <script src="assets/scripts/jquery.js"></script>
+    <script src="assets/scripts/gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <script src="assets/scripts/tilt.js"></script>
+    <script src="assets/scripts/aos.js"></script>
+    <script src="assets/scripts/owl.carousel.js"></script>
+    <script src="assets/scripts/scripts.js"></script>
+
+</body>
+
+</html>
