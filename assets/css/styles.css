@@ -1567,10 +1567,6 @@ body{
   gap: 3.5rem;
 }
 
-.gap-16{
-  gap: 4rem;
-}
-
 .gap-2{
   gap: 0.5rem;
 }
@@ -1887,11 +1883,6 @@ body{
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.py-12{
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 
 .pb-10{
@@ -2348,9 +2339,18 @@ body{
   background-color: rgb(136 19 55 / var(--tw-bg-opacity));
 }
 
+.dark .dark\:bg-\[\#CBD5E1\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+}
+
 .dark .dark\:bg-\[\#F9FAFB\]{
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-\[\#cbd5e166\]{
+  background-color: #cbd5e166;
 }
 
 .dark .dark\:bg-darkclr{
@@ -2365,43 +2365,6 @@ body{
 .dark .dark\:bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.dark .dark\:bg-\[\#CBD5E1\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
-}
-
-.dark .dark\:bg-\[rgb\(203\2c 213\2c 225\)\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
-}
-
-.dark .dark\:bg-\[rgba\(203\2c 213\2c 225\)\]{
-  --tw-bg-opacity: 1;
-  background-color: rgba(203, 213, 225, var(--tw-bg-opacity));
-}
-
-.dark .dark\:bg-\[rgba\(203\2c 213\2c 225\2c 4\)\]{
-  background-color: rgba(203,213,225,4);
-}
-
-.dark .dark\:bg-\[hsl\(213\2c 27\%\2c 84\%\)\]{
-  --tw-bg-opacity: 1;
-  background-color: hsl(213 27% 84% / var(--tw-bg-opacity));
-}
-
-.dark .dark\:bg-\[\#cbd5e1\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
-}
-
-.dark .dark\:bg-\[rgba\(203\2c 213\2c 225\2c \.4\)\]{
-  background-color: rgba(203,213,225,.4);
-}
-
-.dark .dark\:bg-\[\#cbd5e166\]{
-  background-color: #cbd5e166;
 }
 
 .dark .dark\:bg-gradient-to-r{
