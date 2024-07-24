@@ -1423,6 +1423,10 @@ body:where([dir="rtl"], [dir="rtl"] *){
   scroll-margin-top: 6rem;
 }
 
+.scroll-mt-12{
+  scroll-margin-top: 3rem;
+}
+
 .list-none{
   list-style-type: none;
 }
