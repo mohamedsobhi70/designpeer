@@ -255,17 +255,17 @@ gsap.matchMedia().add("(min-width: 1024px)", () => {
     }
   });
 
-  gsap.set(".testimonial-item", { scale: .8, opacity: 0, y: 150 });
+  gsap.set(".testimonial-item", { scale: .8, opacity: 0, y: -100 });
   gsap.to(".testimonial-item", {
     scale: 1,
     opacity: 1,
     y: 0,
     duration: 0.7,
-    stagger: 0.2,
+    stagger: 0.4,
     scrollTrigger: {
       trigger: ".testimonial-item",
       start: "bottom bottom",
-      end: "75% 75%",
+      end: "55% 55%",
       scrub: true
     }
   });
@@ -299,7 +299,7 @@ gsap.matchMedia().add("(min-width: 1024px)", () => {
     }
   });
 
-  gsap.set(".choice-2", { scale: .5, opacity: 0, y: 50 });
+  gsap.set(".choice-2", { scale: .5, opacity: 0, y: 80 });
   gsap.to(".choice-2", {
     scale: 1,
     opacity: 1,
@@ -370,3 +370,6 @@ if ($(".odometer").length > 0) {
     });
   });
 }
+
+
+gsap.fromTo(".clients-carousel .item", { scale: 0, y: -50 }, { scale: 1, y: 0, stagger: .1 })
