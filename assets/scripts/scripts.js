@@ -323,3 +323,27 @@ gsap.from(".deslog1", { duration: .7, opacity: 0, scale: .1, transformOrigin: "0
 gsap.from(".deslog2", { duration: .5, opacity: 0, scale: .2, x: 40, delay: .5, y: 60 })
 gsap.from(".path1", { duration: .07, opacity: 0, stagger: .05, scale: 2, transformOrigin: "50% 50%", delay: 1.2 })
 
+
+
+const odometerElements = document.querySelectorAll('.odometer');
+
+odometerElements.forEach(odometer => {
+  const startValue = parseInt(odometer.getAttribute('data-start'), 10);
+  const endValue = parseInt(odometer.getAttribute('data-end'), 10);
+
+  ScrollTrigger.create({
+    trigger: odometer,
+    start: 'top 80%', 
+    onEnter: () => {
+      gsap.to({value: startValue}, {
+        value: endValue,
+        duration: 2,
+        ease: "power2.in",
+        onUpdate: function() {
+          odometer.textContent = Math.floor(this.targets()[0].value).toLocaleString();
+        }
+      });
+    },
+    scrub: true
+  });
+});

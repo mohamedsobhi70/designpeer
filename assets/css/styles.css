@@ -697,6 +697,7 @@ body{
   border-color: rgb(136 89 250 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(136 89 250 / var(--tw-bg-opacity));
+  text-align: center;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -720,6 +721,7 @@ body{
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
+  text-align: center;
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(52 64 84 / var(--tw-text-opacity));
@@ -2808,6 +2810,11 @@ body{
 
   .lg\:text-5xl{
     font-size: 3rem;
+    line-height: 1;
+  }
+
+  .lg\:text-6xl{
+    font-size: 3.75rem;
     line-height: 1;
   }
 
