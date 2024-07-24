@@ -1676,6 +1676,10 @@ body{
   border-top-width: 1px;
 }
 
+.border-l{
+  border-left-width: 1px;
+}
+
 .border-\[\#374151\]{
   --tw-border-opacity: 1;
   border-color: rgb(55 65 81 / var(--tw-border-opacity));
@@ -1689,6 +1693,11 @@ body{
 .border-primary{
   --tw-border-opacity: 1;
   border-color: rgb(136 89 250 / var(--tw-border-opacity));
+}
+
+.border-\[\#D1D5DB\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
 .border-b-gray-300{
@@ -2186,6 +2195,14 @@ body{
   margin-right: 0.75rem;
 }
 
+[dir="ltr"] .ltr\:border-l{
+  border-left-width: 1px;
+}
+
+[dir="ltr"] .ltr\:border-r{
+  border-right-width: 1px;
+}
+
 [dir="ltr"] .ltr\:pr-2{
   padding-right: 0.5rem;
 }
@@ -2205,6 +2222,10 @@ body{
 [dir="rtl"] .rtl\:rotate-180{
   --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+[dir="rtl"] .rtl\:border-l{
+  border-left-width: 1px;
 }
 
 [dir="rtl"] .rtl\:pl-2{
