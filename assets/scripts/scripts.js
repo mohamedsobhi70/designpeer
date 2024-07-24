@@ -124,7 +124,7 @@ $('.work-carousel1').owlCarousel({
       items: 4
     },
     1450: {
-      items: 5
+      items: 4.5
     }
   }
 });
@@ -152,7 +152,7 @@ $('.work-carousel2').owlCarousel({
       items: 4
     },
     1450: {
-      items: 5
+      items: 4.5
     }
   }
 })
@@ -218,31 +218,31 @@ gsap.matchMedia().add("(min-width: 1024px)", () => {
     }
   });
 
-  gsap.set(".faq-item", { opacity: 0, y: 50 });
-  gsap.to(".faq-item", {
+  gsap.set(".faq-item  *", { opacity: 0, y: 100 });
+  gsap.to(".faq-item  *", {
     opacity: 1,
     y: 0,
     duration: 0.7,
-    stagger: 0.1,
+    stagger: 0.2,
     scrollTrigger: {
-      trigger: ".faq-item",
+      trigger: ".faq-item  *",
       start: "bottom bottom",
       end: "50% 50%",
       scrub: true
     }
   });
 
-  gsap.set(".testimonial-item", { scale: .5, opacity: 0, y: 50 });
+  gsap.set(".testimonial-item", { scale: .8, opacity: 0, y: 150 });
   gsap.to(".testimonial-item", {
     scale: 1,
     opacity: 1,
     y: 0,
     duration: 0.7,
-    stagger: 0.25,
+    stagger: 0.2,
     scrollTrigger: {
       trigger: ".testimonial-item",
       start: "bottom bottom",
-      end: "65% 65%",
+      end: "75% 75%",
       scrub: true
     }
   });
