@@ -139,7 +139,17 @@ $('.work-carousel2').owlCarousel({
   autoplayTimeout: 8000,
   autoplayHoverPause: false,
   onInitialized: createCustomDots, // Call function to create custom dots
-  onChanged: syncDots, // Sync dots on change
+  onChanged: function (event) {
+    syncDots(event);
+    // Check if the last slide is reached
+    let carousel = event.relatedTarget;
+    if (carousel.current() === carousel.items().length - 1) {
+      setTimeout(function () {
+        // Trigger navigation to the first slide
+        carousel.to(0, 300); // 300ms transition
+      }, 8000); // Delay to match the autoplay timeout
+    }
+  },
   responsive: {
     500: {
       items: 2
@@ -256,7 +266,7 @@ gsap.matchMedia().add("(min-width: 1024px)", () => {
     scrollTrigger: {
       trigger: ".pricing-item",
       start: "bottom bottom",
-      end: "70% 70%",
+      end: "75% 75%",
       scrub: true
     }
   });
@@ -333,13 +343,13 @@ odometerElements.forEach(odometer => {
 
   ScrollTrigger.create({
     trigger: odometer,
-    start: 'top 80%', 
+    start: 'top 80%',
     onEnter: () => {
-      gsap.to({value: startValue}, {
+      gsap.to({ value: startValue }, {
         value: endValue,
         duration: 2,
         ease: "power2.in",
-        onUpdate: function() {
+        onUpdate: function () {
           odometer.textContent = Math.floor(this.targets()[0].value).toLocaleString();
         }
       });
