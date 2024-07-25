@@ -270,6 +270,7 @@ gsap.matchMedia().add("(min-width: 1024px)", () => {
     }
   });
 
+
   gsap.set(".pricing-item", { scale: .5, opacity: 0, y: 50 });
   gsap.to(".pricing-item", {
     scale: 1,
@@ -294,7 +295,7 @@ gsap.matchMedia().add("(min-width: 1024px)", () => {
     scrollTrigger: {
       trigger: ".choice-1",
       start: "bottom bottom",
-      end: "50% 50%",
+      end: "60% 60%",
       scrub: true
     }
   });
@@ -309,7 +310,7 @@ gsap.matchMedia().add("(min-width: 1024px)", () => {
     scrollTrigger: {
       trigger: ".choice-2",
       start: "bottom bottom",
-      end: "50% 50%",
+      end: "60% 60%",
       scrub: true
     }
   });

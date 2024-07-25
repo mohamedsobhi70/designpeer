@@ -1502,6 +1502,10 @@ body:where([dir="rtl"], [dir="rtl"] *){
   gap: 30px;
 }
 
+.gap-5{
+  gap: 1.25rem;
+}
+
 .overflow-hidden{
   overflow: hidden;
 }
@@ -1653,11 +1657,6 @@ body:where([dir="rtl"], [dir="rtl"] *){
 .px-5{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-}
-
-.px-6{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 
 .px-8{
@@ -2081,11 +2080,6 @@ body:where([dir="rtl"], [dir="rtl"] *){
     gap: 3rem;
   }
 
-  .md\:px-0{
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
   .md\:pb-32{
     padding-bottom: 8rem;
   }
@@ -2224,6 +2218,11 @@ body:where([dir="rtl"], [dir="rtl"] *){
 
   .lg\:tracking-normal{
     letter-spacing: 0em;
+  }
+
+  .lg\:dark\:bg-\[\#0F141F\]:is(.dark *){
+    --tw-bg-opacity: 1;
+    background-color: rgb(15 20 31 / var(--tw-bg-opacity));
   }
 
   .lg\:dark\:bg-transparent:is(.dark *){
