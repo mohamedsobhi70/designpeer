@@ -374,3 +374,54 @@ if ($(".odometer").length > 0) {
 
 
 gsap.fromTo(".clients-carousel .item", { scale: 0, y: -50 }, { scale: 1, y: 0, stagger: .1 })
+
+
+function split_text() {
+  const isRTL = document.documentElement.getAttribute('dir') === 'rtl';
+  if(!isRTL){
+  gsap.utils.toArray('.section-title').forEach((el) => {
+    let
+      dur = el.getAttribute("data-split-duration") ? el.getAttribute("data-split-duration") : 1,
+      options = {},
+      tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: el,
+          start: "bottom bottom",
+          end: "75% 75%",
+          scrub: true
+        }
+      }),
+      split;
+    options.type = "words,chars";
+    split = new SplitText(el, options);
+    for (var i = 0; i < split.words.length; i++) {
+      tl.from(split.words[i], { duration: dur, delay: i * 0.08, opacity: 0, force3D: true }, i * 0.01);
+      tl.from(split.words[i], { duration: dur, delay: i * 0.08, scale: i % 2 == 0 ? 0 : 2 }, i * 0.01);
+    }
+  });
+  gsap.utils.toArray('.section-excerpt').forEach((el) => {
+    let
+      dur = el.getAttribute("data-split-duration") ? el.getAttribute("data-split-duration") : 1,
+      options = {},
+      tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: el,
+          delay:1,
+          start: "bottom bottom",
+          end: "75% 75%",
+          scrub: true
+        }
+      }),
+      split;
+    options.type = "words,chars";
+    split = new SplitText(el, options);
+    for (var i = 0; i < split.words.length; i++) {
+      tl.from(split.words[i], { duration: dur, delay: .25, opacity: 0, force3D: true });
+      tl.from(split.words[i], { duration: dur, delay: .25, scale: i % 2 == 0 ? 0 : 2 });
+    }
+  }); }
+}
+
+window.addEventListener('load', (event) => {
+  split_text();
+});
