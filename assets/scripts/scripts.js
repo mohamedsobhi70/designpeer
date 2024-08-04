@@ -107,9 +107,9 @@ if ($(".clients-carousel").length > 0) {
 }
 
 
-if ($(".work-carousel1").length > 0) {
+if ($("#work-1").length > 0) {
 
-  $('.work-carousel1').owlCarousel({
+  $('#work-1').owlCarousel({
     center: true,
     nav: false,
     dots: false,
@@ -137,12 +137,15 @@ if ($(".work-carousel1").length > 0) {
       }
     }
   });
-}
 
+  let $originalCarousel = $('#work-1');
+  let $clonedCarousel = $originalCarousel.clone().attr('id', 'work-2').addClass('carousel-high absolute top-0 left-0 w-full');
+  
+  // Append the cloned carousel to the section
+  $originalCarousel.parent().append($clonedCarousel);
+  
 
-if ($(".work-carousel2").length > 0) {
-
-  $('.work-carousel2').owlCarousel({
+  $('#work-2').owlCarousel({
     center: true,
     nav: false,
     dots: false,
@@ -215,6 +218,11 @@ if ($(".work-carousel2").length > 0) {
     max: 1,
     speed: 400,
   });
+}
+    // Clone the carousel and append it with a higher z-index
+
+if ($("#work-2").length > 0) {
+
 }
 
 
