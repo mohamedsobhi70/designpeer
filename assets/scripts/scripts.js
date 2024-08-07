@@ -226,28 +226,63 @@ if ($("#work-2").length > 0) {
 }
 
 
-
-
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.matchMedia().add("(min-width: 1024px)", () => {
-  gsap.to(".service-card.right", {
-    x: 200,
-    scrollTrigger: {
-      trigger: ".service-card.right",
-      start: "bottom bottom",
-      scrub: true
-    }
+
+
+const tabletgsap = gsap.matchMedia();
+
+tabletgsap.add(
+  "(min-width: 768px) and (max-width: 1280px)", () => {
+    gsap.utils.toArray(".service-card:nth-child(6n+1), .service-card:nth-child(6n+2), .service-card:nth-child(6n+3)").forEach(card => {
+      gsap.to(card, {
+        x: 200,
+        scrollTrigger: {
+          trigger: card,
+          start: "bottom bottom",
+          scrub: true
+        }
+      });
+    });
+  
+    gsap.utils.toArray(".service-card:nth-child(6n+4), .service-card:nth-child(6n+5), .service-card:nth-child(6n+6)").forEach(card => {
+      gsap.to(card, {
+        x: -200,
+        scrollTrigger: {
+          trigger: card,
+          start: "bottom bottom",
+          scrub: true
+        }
+      });
+    });
+
+  }
+)
+
+gsap.matchMedia().add("(min-width: 1280px)", () => {
+  gsap.utils.toArray(".service-card:nth-child(10n+1), .service-card:nth-child(10n+2), .service-card:nth-child(10n+3), .service-card:nth-child(10n+4), .service-card:nth-child(10n+5)").forEach(card => {
+    gsap.to(card, {
+      x: 200,
+      scrollTrigger: {
+        trigger: card,
+        start: "bottom bottom",
+        scrub: true
+      }
+    });
   });
 
-  gsap.to(".service-card.left", {
-    x: -200,
-    scrollTrigger: {
-      trigger: ".service-card.left",
-      start: "bottom bottom",
-      scrub: true
-    }
+  gsap.utils.toArray(".service-card:nth-child(10n+6), .service-card:nth-child(10n+7), .service-card:nth-child(10n+8), .service-card:nth-child(10n+9), .service-card:nth-child(10n+10)").forEach(card => {
+    gsap.to(card, {
+      x: -200,
+      scrollTrigger: {
+        trigger: card,
+        start: "bottom bottom",
+        scrub: true
+      }
+    });
   });
+})
+gsap.matchMedia().add("(min-width: 1024px)", () => {
 
   gsap.set(".faq-item  *", { opacity: 0, y: 100 });
   gsap.to(".faq-item  *", {
@@ -369,7 +404,7 @@ if ($(".odometer").length > 0) {
         gsap.to({ value: startValue }, {
           value: endValue,
           duration: 2,
-          ease: "power2.in",
+          ease: "linear",
           onUpdate: function () {
             odometer.textContent = Math.floor(this.targets()[0].value).toLocaleString();
           }

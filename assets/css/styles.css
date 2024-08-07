@@ -775,6 +775,7 @@ body:where([dir="rtl"], [dir="rtl"] *){
 #header{
   position: absolute;
   top: 80px;
+  left: 0px;
   z-index: 50;
   width: 100%;
   --tw-translate-y: -100%;
@@ -822,7 +823,7 @@ body:where([dir="rtl"], [dir="rtl"] *){
   left: 0px;
   z-index: auto;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   opacity: 0;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1486,6 +1487,10 @@ body:where([dir="rtl"], [dir="rtl"] *){
   gap: 1rem;
 }
 
+.gap-5{
+  gap: 1.25rem;
+}
+
 .gap-6{
   gap: 1.5rem;
 }
@@ -1500,10 +1505,6 @@ body:where([dir="rtl"], [dir="rtl"] *){
 
 .gap-\[30px\]{
   gap: 30px;
-}
-
-.gap-5{
-  gap: 1.25rem;
 }
 
 .overflow-hidden{
@@ -2065,15 +2066,13 @@ body:where([dir="rtl"], [dir="rtl"] *){
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@media (min-width: 640px){
-  .sm\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
 @media (min-width: 768px){
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:gap-12{
@@ -2117,10 +2116,6 @@ body:where([dir="rtl"], [dir="rtl"] *){
 
   .lg\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-5{
-    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .lg\:flex-row{
@@ -2220,11 +2215,6 @@ body:where([dir="rtl"], [dir="rtl"] *){
     letter-spacing: 0em;
   }
 
-  .lg\:dark\:bg-\[\#0F141F\]:is(.dark *){
-    --tw-bg-opacity: 1;
-    background-color: rgb(15 20 31 / var(--tw-bg-opacity));
-  }
-
   .lg\:dark\:bg-transparent:is(.dark *){
     background-color: transparent;
   }
@@ -2233,6 +2223,10 @@ body:where([dir="rtl"], [dir="rtl"] *){
 @media (min-width: 1280px){
   .xl\:w-9\/12{
     width: 75%;
+  }
+
+  .xl\:grid-cols-5{
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 }
 
